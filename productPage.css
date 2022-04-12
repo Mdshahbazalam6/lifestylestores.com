@@ -18,7 +18,7 @@
     font-weight: normal;
     border-radius: 2px;
     text-transform: none;
-    padding: 7px 20px 5px 8px;
+    padding: 7px 20px 7px 8px;
     margin: 8px;
     margin-bottom: 25px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -84,4 +84,24 @@
     margin: 6px;
 }
 
+#filter{
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 93px;
+    font-size: 15px;
+    color: #848282;
+    font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 
+}
+#filter>div{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    /* justify-content: end; */
+}
+#filter select{
+    padding: 7px 16px ;
+    margin: 10px;
+    color: black;
+    border: 1px solid  #dad8d8;;
+}
