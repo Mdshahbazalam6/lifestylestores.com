@@ -1,12 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men</title>
+  </head>
+  <link rel="stylesheet" href="./productPage.css" />
+  <body>
+    <div></div>
+
+    <h1 id="topName">Topwear</h1>
+    <div id="topSection">
+      <div>
+        <img
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/men-tops-casualshirts.jpg"
+          alt=""
+        />
+        <p>Casual Shirts</p>
+      </div>
+      <div>
+        <img
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/men-tops-formalshirts.jpg"
+          alt=""
+        />
+        <p>Formal Shirts</p>
+      </div>
+      <div>
+        <img
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/men-tops-jackets.jpg"
+          alt=""
+        />
+        <p>Jackets</p>
+      </div>
+      <div>
+        <img
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/men-tops-polos.jpg"
+          alt=""
+        />
+        <p>Polos</p>
+      </div>
+      <div>
+        <img
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/men-tops-tshirts.jpg"
+          alt=""
+        />
+        <p>T-Shirts</p>
+      </div>
+    </div>
+
+    <div id="sort">
+       <select name="" id="">
+           <option value="Price">Price</option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+       </select>
+       <select name="" id="">
+           <option value="Type">Type</option>
+           <option value="Polo Neck">Polo Neck</option>
+           <option value="Casual">Casual</option>
+           <option value="Hooded">Hooded</option>
+           <option value="Denim">Denim</option>
+           <option value="Bombers">Bombars</option>
+       </select>
+       <select name="" id="">
+           <option value="">Fabric</option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+       </select>
+       <select name="" id="">
+           <option value="">Size</option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+       </select>
+       <select name="" id="">
+           <option value="">Color</option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+       </select>
+       <select name="" id="">
+           <option value="">Brand</option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+       </select>
+       <select name="" id="">
+           <option value="">Promotions</option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+       </select>
+       <select name="" id="">
+           <option value="">Design</option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+       </select>
+       <select name="" id="">
+           <option value="">Sleeve Length</option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+       </select>
+       <select name="" id="">
+           <option value="">Fit</option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+       </select>
+       <select name="" id="">
+           <option value="">Discount Range</option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+           <option value=""></option>
+       </select>
+       
+    </div>
+    <div id="productContainer"></div>
+  </body>
+  <script>
+    var products = [
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010190998-Var1-White-White-1000010190998-Var1_01-2100.jpg",
+        price: "661",
+        name: "FAHRENHEIT Men Solid Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Fahrenheit-White-FAHRENHEIT-Men-Solid-Regular-Fit-Polo-T-shirt/p/1000010190998-Var1-White-White",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010712435-Green-1000010712435_01-2100.jpg",
+        price: "1,199",
+        name: "LEE Men Printed Crew Neck T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Lee-Green-LEE-Men-Printed-Crew-Neck-T-shirt/p/1000010712435-Green",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010259935-Yellow-Mustard-1000010259935_01-2100.jpg",
+        price: "949",
+        name: "U.S. POLO ASSN. Men Solid Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-U-S-Polo-Assn-Yellow-U-S-POLO-ASSN-Men-Solid-Regular-Fit-Polo-T-shirt/p/1000010259935-Yellow-Mustard",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009812965-Green-Green-1000009812965_01-2100.jpg",
+        price: "499",
+        name: "KAPPA Men Printed Regular Fit Crew Neck T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Kappa-Green-KAPPA-Men-Printed-Regular-Fit-Crew-Neck-T-shirt/p/1000009812965-Green-Green",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010038004-Blue-1000010038004_01-2100.jpg",
+        price: "559",
+        name: "PROLINE Men Printed Regular Fit Crew Neck T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Proline-Blue-PROLINE-Men-Printed-Regular-Fit-Crew-Neck-T-shirt/p/1000010038004-Blue",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010816184-Blue-Darkblue-1000010816184_01-2100.jpg",
+        price: "1,329",
+        name: "COLORPLUS Men Printed Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Colorplus-Blue-COLORPLUS-Men-Printed-Regular-Fit-Polo-T-shirt/p/1000010816184-Blue-Darkblue",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010436343-Black-1000010436343-15112021_01-2100.jpg",
+        price: "479",
+        name: "KAPPA Men Printed Crew Neck Sports T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Kappa-Black-KAPPA-Men-Printed-Crew-Neck-Sports-T-shirt/p/1000010436343-Black",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009968630-Red-Wine-1000009968630_01-2100.jpg",
+        price: "599",
+        name: "BOSSINI Men Solid Regular Fit Crew Neck T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Bossini-Red-BOSSINI-Men-Solid-Regular-Fit-Crew-Neck-T-shirt/p/1000009968630-Red-Wine",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010753103-Blue-Blue-1000010753103_02-2100.jpg",
+        price: "1,150",
+        name: "JACK & JONES Men Striped Short Sleeves Slim Fit Casual Shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-JACK-%26-JONES-Blue-JACK-%26-JONES-Men-Striped-Short-Sleeves-Slim-Fit-Casual-Shirt/p/1000010753103-Blue-Blue",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009948626-Var78-Yellow-1000009948626-Var78_01-2100.jpg",
+        price: "661",
+        name: "FAHRENHEIT Men Striped Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Fahrenheit-Yellow-FAHRENHEIT-Men-Striped-Regular-Fit-Polo-T-shirt/p/1000009948626-Var78-Yellow",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009948611-Blue-LightBlue-1000009948611_01-2100.jpg",
+        price: "661",
+        name: "FAHRENHEIT Men Striped Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Fahrenheit-Blue-FAHRENHEIT-Men-Striped-Regular-Fit-Polo-T-shirt/p/1000009948611-Blue-LightBlue",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008301238-Var7-Honey-1000008301238-Var7_02-2100.jpg",
+        price: "1,395",
+        name: "FAHRENHEIT Solid Slim Fit Crew Neck T-shirts - Pack of 3",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Fahrenheit-Yellow-FAHRENHEIT-Solid-Slim-Fit-Crew-Neck-T-shirts--Pack-of-3/p/1000008301238-Var7-Honey",
+      },
+     
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010190998-Var1-White-White-1000010190998-Var1_01-2100.jpg",
+        price: "661",
+        name: "FAHRENHEIT Men Solid Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Fahrenheit-White-FAHRENHEIT-Men-Solid-Regular-Fit-Polo-T-shirt/p/1000010190998-Var1-White-White",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010712435-Green-1000010712435_01-2100.jpg",
+        price: "1,199",
+        name: "LEE Men Printed Crew Neck T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Lee-Green-LEE-Men-Printed-Crew-Neck-T-shirt/p/1000010712435-Green",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010259935-Yellow-Mustard-1000010259935_01-2100.jpg",
+        price: "949",
+        name: "U.S. POLO ASSN. Men Solid Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-U-S-Polo-Assn-Yellow-U-S-POLO-ASSN-Men-Solid-Regular-Fit-Polo-T-shirt/p/1000010259935-Yellow-Mustard",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009812965-Green-Green-1000009812965_01-2100.jpg",
+        price: "499",
+        name: "KAPPA Men Printed Regular Fit Crew Neck T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Kappa-Green-KAPPA-Men-Printed-Regular-Fit-Crew-Neck-T-shirt/p/1000009812965-Green-Green",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010038004-Blue-1000010038004_01-2100.jpg",
+        price: "559",
+        name: "PROLINE Men Printed Regular Fit Crew Neck T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Proline-Blue-PROLINE-Men-Printed-Regular-Fit-Crew-Neck-T-shirt/p/1000010038004-Blue",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010816184-Blue-Darkblue-1000010816184_01-2100.jpg",
+        price: "1,329",
+        name: "COLORPLUS Men Printed Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Colorplus-Blue-COLORPLUS-Men-Printed-Regular-Fit-Polo-T-shirt/p/1000010816184-Blue-Darkblue",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010436343-Black-1000010436343-15112021_01-2100.jpg",
+        price: "479",
+        name: "KAPPA Men Printed Crew Neck Sports T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Kappa-Black-KAPPA-Men-Printed-Crew-Neck-Sports-T-shirt/p/1000010436343-Black",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009968630-Red-Wine-1000009968630_01-2100.jpg",
+        price: "599",
+        name: "BOSSINI Men Solid Regular Fit Crew Neck T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Bossini-Red-BOSSINI-Men-Solid-Regular-Fit-Crew-Neck-T-shirt/p/1000009968630-Red-Wine",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010753103-Blue-Blue-1000010753103_02-2100.jpg",
+        price: "1,150",
+        name: "JACK & JONES Men Striped Short Sleeves Slim Fit Casual Shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-JACK-%26-JONES-Blue-JACK-%26-JONES-Men-Striped-Short-Sleeves-Slim-Fit-Casual-Shirt/p/1000010753103-Blue-Blue",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009948626-Var78-Yellow-1000009948626-Var78_01-2100.jpg",
+        price: "661",
+        name: "FAHRENHEIT Men Striped Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Fahrenheit-Yellow-FAHRENHEIT-Men-Striped-Regular-Fit-Polo-T-shirt/p/1000009948626-Var78-Yellow",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009948611-Blue-LightBlue-1000009948611_01-2100.jpg",
+        price: "661",
+        name: "FAHRENHEIT Men Striped Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Fahrenheit-Blue-FAHRENHEIT-Men-Striped-Regular-Fit-Polo-T-shirt/p/1000009948611-Blue-LightBlue",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008301238-Var7-Honey-1000008301238-Var7_02-2100.jpg",
+        price: "1,395",
+        name: "FAHRENHEIT Solid Slim Fit Crew Neck T-shirts - Pack of 3",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Fahrenheit-Yellow-FAHRENHEIT-Solid-Slim-Fit-Crew-Neck-T-shirts--Pack-of-3/p/1000008301238-Var7-Honey",
+      },
+     
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010190998-Var1-White-White-1000010190998-Var1_01-2100.jpg",
+        price: "661",
+        name: "FAHRENHEIT Men Solid Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Fahrenheit-White-FAHRENHEIT-Men-Solid-Regular-Fit-Polo-T-shirt/p/1000010190998-Var1-White-White",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010712435-Green-1000010712435_01-2100.jpg",
+        price: "1,199",
+        name: "LEE Men Printed Crew Neck T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Lee-Green-LEE-Men-Printed-Crew-Neck-T-shirt/p/1000010712435-Green",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010259935-Yellow-Mustard-1000010259935_01-2100.jpg",
+        price: "949",
+        name: "U.S. POLO ASSN. Men Solid Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-U-S-Polo-Assn-Yellow-U-S-POLO-ASSN-Men-Solid-Regular-Fit-Polo-T-shirt/p/1000010259935-Yellow-Mustard",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009812965-Green-Green-1000009812965_01-2100.jpg",
+        price: "499",
+        name: "KAPPA Men Printed Regular Fit Crew Neck T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Kappa-Green-KAPPA-Men-Printed-Regular-Fit-Crew-Neck-T-shirt/p/1000009812965-Green-Green",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010038004-Blue-1000010038004_01-2100.jpg",
+        price: "559",
+        name: "PROLINE Men Printed Regular Fit Crew Neck T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Proline-Blue-PROLINE-Men-Printed-Regular-Fit-Crew-Neck-T-shirt/p/1000010038004-Blue",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010816184-Blue-Darkblue-1000010816184_01-2100.jpg",
+        price: "1,329",
+        name: "COLORPLUS Men Printed Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Colorplus-Blue-COLORPLUS-Men-Printed-Regular-Fit-Polo-T-shirt/p/1000010816184-Blue-Darkblue",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010436343-Black-1000010436343-15112021_01-2100.jpg",
+        price: "479",
+        name: "KAPPA Men Printed Crew Neck Sports T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Kappa-Black-KAPPA-Men-Printed-Crew-Neck-Sports-T-shirt/p/1000010436343-Black",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009968630-Red-Wine-1000009968630_01-2100.jpg",
+        price: "599",
+        name: "BOSSINI Men Solid Regular Fit Crew Neck T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Bossini-Red-BOSSINI-Men-Solid-Regular-Fit-Crew-Neck-T-shirt/p/1000009968630-Red-Wine",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010753103-Blue-Blue-1000010753103_02-2100.jpg",
+        price: "1,150",
+        name: "JACK & JONES Men Striped Short Sleeves Slim Fit Casual Shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-JACK-%26-JONES-Blue-JACK-%26-JONES-Men-Striped-Short-Sleeves-Slim-Fit-Casual-Shirt/p/1000010753103-Blue-Blue",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009948626-Var78-Yellow-1000009948626-Var78_01-2100.jpg",
+        price: "661",
+        name: "FAHRENHEIT Men Striped Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Fahrenheit-Yellow-FAHRENHEIT-Men-Striped-Regular-Fit-Polo-T-shirt/p/1000009948626-Var78-Yellow",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009948611-Blue-LightBlue-1000009948611_01-2100.jpg",
+        price: "661",
+        name: "FAHRENHEIT Men Striped Regular Fit Polo T-shirt",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Fahrenheit-Blue-FAHRENHEIT-Men-Striped-Regular-Fit-Polo-T-shirt/p/1000009948611-Blue-LightBlue",
+      },
+      {
+        image:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008301238-Var7-Honey-1000008301238-Var7_02-2100.jpg",
+        price: "1,395",
+        name: "FAHRENHEIT Solid Slim Fit Crew Neck T-shirts - Pack of 3",
+        name_url:
+          "https://www.lifestylestores.com/in/en/SHOP-Fahrenheit-Yellow-FAHRENHEIT-Solid-Slim-Fit-Crew-Neck-T-shirts--Pack-of-3/p/1000008301238-Var7-Honey",
+      },
+     
+    ];
+
+    showProducts();
+    function showProducts() {
+      products.forEach(function (item) {
+        var box = document.createElement("div");
+
+        var img = document.createElement("img");
+        img.setAttribute("src", item.image);
+
+        var name = document.createElement("p");
+        name.innerText = item.name;
+        var price = document.createElement("h4");
+        price.innerText = "₹ " + item.price;
+
+        box.append(img, price, name);
+
+        document.querySelector("#productContainer").append(box);
+      });
+    }
+
+    window.location.load();
+  </script>
 </html>
