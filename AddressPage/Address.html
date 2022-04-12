@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding:0%;
+        margin: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+    }
+    #nav{
+        width: 88%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(255,254,254);
+        padding:0.1% 6%;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+      
+    }
+    #nav img{
+        width: 80%;
+    }
+    #nav p{
+        font-size: 70%;
+        text-align: end;
+        line-height: 55%;
+        color: grey;
+    }
+    
+    #pmain{
+        padding:1.5% 6%;
+        display: flex;
+
+    }
+    #pmain > div{
+        border: 1px solid gainsboro;
+    }
+    #address{
+        flex-grow: 4;
+    }
+    #psummary{
+        flex-grow: 3;
+    }
+    #address > div{
+        display: flex;
+        
+    }
+    #method > div{
+        border: 1px solid gainsboro;
+        margin-right: 1%;
+        width: 47%;
+        text-align: center;
+    }
+    #address p{
+        color: gray;
+        font-size: 85%;
+        margin-top: 5px;
+        
+       
+    }
+    #address > div   h4{
+       margin-bottom: 7px;
+       margin-top: 15px;
+       color: rgba(0, 0, 0, 0.651);
+    }
+    #address h2{
+        font-weight: 500;
+        margin-top: 0px;
+    }
+    #address h3{
+        margin-top: 7%;
+        color: rgba(0, 0, 0, 0.651);
+        font-size: 110%;
+        margin-bottom: 2%;
+    }
+
+    #form{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #form > div{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5%;
+        width: 65%;   
+    }
+    #form > div input{
+       margin-top: 6px;
+        height: 38px;
+        color: rgba(0, 0, 0, 0.582);
+        border: 1px solid rgba(160, 159, 159, 0.5);
+    }
+    #form >  div lable{
+       
+        font-size: small;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.856); 
+        
+    }
+    #state{
+        margin-top: 6px;
+        height: 42px;
+        color: rgba(0, 0, 0, 0.582);
+    }
+    #form div:nth-last-child(1){
+        color:rgba(0, 0, 0, 0.856);
+        font-size: small;
+        font-weight: 600;
+    }
+    #type{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        
+    }
+    #type > div{
+        display: flex;
+    }
+    #type p{
+          font-size: medium;
+          font-weight: lighter;
+          color: rgba(0, 0, 0, 0.829);
+          margin-top: 15px;
+          margin-left: 15px;
+    }
+    option{
+        color: red;
+        line-height: 20px;
+        background-color: blue;
+    }
+
+
+ 
+    
+</style>
+<body>
+    <div id="nav">
+        <div><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg" /></div>
+        <div>
+            <p>Call 1800-123-1555</p>
+            <p>Monday - Saturday, 09:00AM - 07:00PM</p>
+        </div>
+    </div>
+
+
+    
+    <div id="pmain">
+        <div
+        id="address">
+            <h2>Select a shipping method</h2>
+            <div id="method">
+                <div>
+                    <h4>Home Delivery</h4>
+                    <p>Get your product delivered to your home.</p>
+                </div>
+                <div>
+                    <h4>Click & Collect</h4>
+                    <p>Collect your order from a store of your choice.</p>
+                </div>
+            </div>
+
+            <h3>Add your shipping address</h3>
+
+            <div id="form">
+                <div>
+                    <lable>Full Name</lable>
+                    <input id="name" type="text" placeholder="Enter your full name"/>
+                </div>
+
+                <div>
+                    <lable>Mobile Number</lable>
+                    <input id="number" type="tel" placeholder="Enter your mobile number"/>
+                </div>
+
+                <div>
+                    <lable>Pincode</lable>
+                    <input id="pincode" type="number" placeholder="Enter your Pincode"/>
+                </div>
+
+                <div>
+                    <lable>City</lable>
+                    <input id="city" type="text" placeholder="Select your City or Town"/>
+                </div>
+
+                <div>
+                    <lable>State</lable>
+                    <select id="state" placeholder="Select your State">
+                        <option>Andaman And Nicobar Islands</option>  <option>Andhra Pradesh</option>  <option>Arunachal Pradesh</option>
+                        <option>Assam</option>  <option>Bihar</option>  <option>Chandigarh</option>
+                        <option>Chhattisarh</option>  <option>Dadra And Nagar Haveli</option>  <option>Doman And Diu</option>
+                        <option>Delhi</option> <option>Goa</option>  <option>Gujarat</option>
+                        <option>Haryana</option>  <option>Himachal Pradesh</option>  <option>Jammu And Kashmir</option>
+                        <option>Jharkhand</option>  <option>Karnataka</option>  <option>Kerala</option>
+                        <option>Lakshadweep</option>  <option>Madhya Pradesh</option>  <option>Maharashtra</option>
+                        <option>Maniput</option>  <option>Meghalaya</option>  <option>Mizoram</option>
+                        <option>Nagaland</option>  <option>Odisha</option>  <option>Puducherry</option>
+                        <option>Punjab</option>  <option>Rajasthan</option>  <option>Sikkim</option>
+                        <option>Tamil Nadu</option>  <option>Telangana</option>  <option>Tripura</option>
+                        <option>Uttar Pradesh</option>  <option>Uttarakhand</option>  <option>West Bengal</option>
+                        <option></option>  <option></option>  <option></option>
+                    </select>
+                </div>
+
+                <div>
+                    <lable>Building name or number</lable>
+                    <input id="building" type="text" placeholder="Enter Building Name"/>
+                </div>
+
+                <div>
+                    <lable>Street name or number</lable>
+                    <input id="street" type="text" placeholder="Flat/House number, Floor, Building"/>
+                </div>
+
+                <div>
+                    <lable>Landmark</lable>
+                    <input id="Landmark" type="text" placeholder="Landmark"/>
+                </div>
+
+                <div>
+                    <label>Addres Type</label>
+                    <div id="type">
+                       <div>
+                        <input type="radio" /><p>Home</p>
+                       </div> 
+                       <div>
+                        <input type="radio"/><p>Office</p>
+                       </div>
+                     
+                    </div>
+                 
+                </div>
+                <!-- form -->
+            </div>
+
+            <!-- address -->
+        </div>
+
+
+
+
+
+
+
+
+
+        <div id="psummary">
+            <h2>Your order summary----</h2>
+        </div>
+       
+    </div>
+</body>
+</html>
