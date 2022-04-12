@@ -1,0 +1,131 @@
+body{
+    padding:0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+#nav{
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255,254,254);
+    padding:0.1% 6%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  
+}
+#nav img{
+    width: 80%;
+}
+#nav p{
+    font-size: 70%;
+    text-align: end;
+    line-height: 55%;
+    color: grey;
+}
+
+#pmain{
+    padding:1.5% 6%;
+    display: flex;
+
+}
+#pmain > div{
+    border: 1px solid gainsboro;
+}
+#address{
+    flex-grow: 4;
+}
+#psummary{
+    flex-grow: 3;
+}
+#address > div{
+    display: flex;
+    
+}
+#method > div{
+    border: 1px solid gainsboro;
+    margin-right: 1%;
+    width: 47%;
+    text-align: center;
+}
+#address p{
+    color: gray;
+    font-size: 85%;
+    margin-top: 5px;
+    
+   
+}
+#address > div   h4{
+   margin-bottom: 7px;
+   margin-top: 15px;
+   color: rgba(0, 0, 0, 0.651);
+}
+#address h2{
+    font-weight: 500;
+    margin-top: 0px;
+}
+#address h3{
+    margin-top: 7%;
+    color: rgba(0, 0, 0, 0.651);
+    font-size: 110%;
+    margin-bottom: 2%;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+
+}
+#form > div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5%;
+    width: 65%;   
+}
+#form > div input{
+   margin-top: 6px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0.582);
+    border: 1px solid rgba(160, 159, 159, 0.5);
+}
+#form >  div lable{
+   
+    font-size: small;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.856); 
+    
+}
+#state{
+    margin-top: 6px;
+    height: 42px;
+    color: rgba(0, 0, 0, 0.582);
+}
+#form div:nth-last-child(1){
+    color:rgba(0, 0, 0, 0.856);
+    font-size: small;
+    font-weight: 600;
+}
+#type{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    
+}
+#type > div{
+    display: flex;
+}
+#type p{
+      font-size: medium;
+      font-weight: lighter;
+      color: rgba(0, 0, 0, 0.829);
+      margin-top: 15px;
+      margin-left: 15px;
+}
+option{
+    color: red;
+    line-height: 20px;
+    background-color: blue;
+}
+
+
+
