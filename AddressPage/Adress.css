@@ -29,11 +29,12 @@ body{
     display: flex;
 
 }
-#pmain > div{
+#pmain > div:nth-last-child(1){
     border: 1px solid gainsboro;
 }
 #address{
     flex-grow: 4;
+    
 }
 #psummary{
     flex-grow: 3;
@@ -125,6 +126,31 @@ option{
     color: red;
     line-height: 20px;
     background-color: blue;
+}
+hr{
+    margin-right: 5%;
+}
+#payment{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+#payment div{
+    display: flex;
+    justify-content: space-between;
+}
+#payment > div > div:nth-last-child(1){
+    display: flex;
+    flex-direction: column;
+}
+#payment img{
+    width:100%
+}
+#payment input{
+    margin-top: 30px;
+}
+#payment h2{
+    margin-top: 15px;
 }
 
 
