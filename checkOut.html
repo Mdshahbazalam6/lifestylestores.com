@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./checkout.css">
+<body>
+    <h1 id="name"></h1>
+    <div id="cartContainer">
+        <div id="image">
+
+        </div> 
+        <div>
+            
+            <h2 id="price"></h2>
+            <p id="tax">Inclusive of all taxes</p>
+            <p >Free shipping on all orders</p>
+
+            <p>Color : MultiColor</p>
+
+            <label for="size">Size:</label>
+            <div  id="size" >
+            <div>S</div>
+            <div>M</div>
+            <div>L</div>
+            <div>XL</div>
+            <div>XXL</div>
+            </div>
+            <button id="addBasket">
+                Add To Basket
+            </button>
+            <p> 💛 Add to Favoutites</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    var cartItem=JSON.parse(localStorage.getItem("cartItem"))
+    
+    var img1=document.createElement("img");
+    var img2=document.createElement("img");
+    
+    img1.setAttribute("src",cartItem.image)
+    img2.setAttribute("src",cartItem.image)
+    document.querySelector("#image").append(img1,img2)
+
+    document.querySelector("#name").innerHTML=cartItem.name;
+    document.querySelector("#price").innerHTML="₹"+cartItem.price;
+    
+</script>
+</html>
