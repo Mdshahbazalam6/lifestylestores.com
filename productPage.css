@@ -71,6 +71,9 @@
 #productContainer > div > img {
   width: 100%;
 }
+#productContainer > div > img :hover{
+  transform: scale(1.4);
+}
 #productContainer > div > p {
   font-size: 13px;
 }
