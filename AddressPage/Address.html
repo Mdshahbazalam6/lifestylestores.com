@@ -329,7 +329,7 @@
                 <div>
                     <p>By clicking on Proceed to Payment, you agree to our <a>Terms and Conditions</a></p>
                 </div>
-                <div><button id="button">Pay Now</button></div>
+                <div><button id="button" onclick="submits()">Pay Now</button></div>
             </div>
 
 
@@ -350,7 +350,14 @@
 
 
         <div id="psummary">
-            <h2>Your order summary----</h2>
+            <p>Your order summary</p>
+            <hr>
+            <div id="smain">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
        
     </div>
@@ -359,14 +366,14 @@
 
 <script>
      
-  var data=document.querySelector("#name").value;
-   var butn=document.querySelector("#button").addEventListener("click",submit)
-   function submit(){
+ 
+ 
+   function submits(){
+    var data=document.querySelector("input").value;
        if(data!=""){
         alert("login successfull")
-        
        }else{
-        alert("Please fill the details")
+           alert("Please fill the details")
        }
    }
    

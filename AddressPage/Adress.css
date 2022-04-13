@@ -752,8 +752,24 @@ margin: 0%;
     }
 
 }
+#psummary{
+    padding:2.5%
+}
+#psummary p{
+    font-weight:lighter;
+    text-align: center;
 
-
+}
+#smain{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto auto auto ;
+}
+#smain > div{
+    border:1px solid grey;
+    padding:13% 0%;
+    margin: 1% 0%;
+}
 
 
 
