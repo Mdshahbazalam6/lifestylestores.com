@@ -9,12 +9,15 @@
 .first,
 .second ul {
     background-color: black;
-    padding: 1.5vh;
+    padding: 1vh;
     color: white;
     display: flex;
     justify-content: space-around;
     font-weight: 500;
     list-style: none;
+    position: sticky;
+    top: 0vh;
+    z-index: 10;
 }
 
 .first>ul {
@@ -24,7 +27,7 @@
 .first>div ul {
     display: flex;
     list-style: none;
-    width: 26vw;
+    width: 30vw;
     justify-content: space-between;
 }
 
@@ -61,7 +64,7 @@ input {
 }
 
 .belowsearch {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 95vw;
     height: 5vh;
 }
@@ -653,4 +656,111 @@ hr{
     width: 20vw;
  
 }
+}
+/* Navbar */
+.navbar {
+    background-color: whitesmoke;
+    text-align: center;
+    position: sticky;
+    top: 5vh;
+    z-index: 10;
+}
+
+.navbar ul {
+    /* display: inline-flex; */
+    display: flex;
+    list-style: none;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.navbar ul li {
+    margin: .5vw;
+    margin-bottom: 0%;
+}
+
+.navbar ul li input {
+    width: 25vw;
+    padding: 1vh;
+    outline: none;
+    background-color: white;
+    background-color: whitesmoke;
+    border: .2px solid rgb(174, 172, 172);
+    margin-bottom: -1vh;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.navbar ul li a:hover {
+    color: rgb(250, 166, 25);
+
+}
+
+.navbar ul li:hover {
+    background-color: white;
+}
+
+.submenue {
+    margin-top: 1vw;
+    position: absolute;
+    top: 4.8vh;
+    left: 2vw;
+    width: 90vw;
+    padding: .7vh;
+    z-index: 8;
+}
+
+.submenue>ul>li {
+    color: black;
+    font-size: 1vw;
+}
+
+.navbar ul li>div {
+    display: none;
+}
+
+.navbar ul li:hover .submenue {
+    background-color: white;
+    display: inline-block;
+    color: rgb(250, 166, 25);
+}
+
+.submenue>ul>li:hover .in {
+    display: block;
+}
+
+.in {
+    background-color: white;
+    width: 95vw;
+    height: 50vh;
+    border: 2px solid whitesmoke;
+    position: absolute;
+    left: 1vw;
+    display: flex;
+}
+
+
+.innest_menue {
+    width: 100vw;
+    height: 20vh;
+    /* border: .5px solid whitesmoke; */
+}
+
+.in>div {
+    float: left;
+    /* border: 1px solid red ; */
+    width: 15vw;
+    height: 20vh;
+    margin-top: 2vh;
+}
+
+.in:first-child {
+    line-height: 3vh;
+    text-align: left;
+    padding-left: 1vw;
 }
