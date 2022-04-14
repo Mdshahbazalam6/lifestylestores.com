@@ -20,31 +20,45 @@ body{
 #cartContainer>div{
     padding: 16px;
 }
-#image>img{
-   
-    padding: 5px;
+/* #image{
 }
 #image>img{
-    width: 350px;
+    
+    
+} */
+#image>img{
+    transition: all 0.3s;
+    padding: 5px;
+    width: 420px;
+    position: static;
+}
+#image>img:hover{
+    transform: scale(1.2)
 }
 #price{
     display: inline;
-    font-size: 27px;
+    font-size: 31px;
     font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
-    color: red;
+    /* color: red; */
+}
+
+#image>img:nth-child(2){
+    transform: rotateY(180deg);
+    
+    
 }
 
 #tax{
     color: #b1b1b1;
     margin-top: -1px;
-    font-size: 14px;
+    font-size: 15px;
     font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
 
 }
 #tax+p{
     color: #FAA619;
     text-decoration: underline;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: -7px;
     font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
 
@@ -53,20 +67,57 @@ body{
    cursor: pointer;
 }
 
+#tax+p+p{
+    font-size: 17px;
+}
+
 #size{
     display: flex;
     justify-content: center;
 }
 #size>div{
     margin: 4px;
-    border: 1.5px solid rgb(196, 206, 223);
+    border: 1.8px solid rgb(196, 206, 223);
     font-size: 16px;
-    width: 50px;
+    width: 65px;
     /* height: 50px; */
     /* padding-top: 50%; */
-    padding: 14px 0px 14px 0px;
+    padding: 16px 0px 16px 0px;
     text-align: center;
 }
 #size>div:hover{
    cursor: pointer;
+}
+#size>div:hover{
+   color: #FAA619;
+   border: 1.8px solid #FAA619;
+}
+
+#addBasket{
+    margin: 21px 2px;
+    padding: 18px;
+    width: 100%;
+    
+    background-color: #FAA619;
+    border: 1px solid #FAA619;
+    color: white;
+    font-weight: 550;
+    font-size: 18px;
+    font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
+
+}
+#addBasket:hover{
+    cursor: pointer;
+}
+#line{
+    border: 0.1x solid rgb(239, 238, 238);
+    margin: 27px 0px;
+}
+#offer{
+    display: inline;
+    font-size: 15px;
+    border: 1px solid rgb(245, 233, 233);;
+    padding: 7px;
+    color: red;
+    background-color: rgb(245, 233, 233);
 }
