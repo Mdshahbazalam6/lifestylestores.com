@@ -302,6 +302,7 @@ function showProducts(allProducts) {
 
     var name = document.createElement("p");
     name.innerText = item.name;
+    name.style.marginTop="8px"
     var price = document.createElement("h4");
     price.innerText = "₹ " + item.price;
 
@@ -314,7 +315,15 @@ function showProducts(allProducts) {
         localStorage.setItem("cartProducts",JSON.stringify(cartProducts))
     })
 
-    box.addEventListener("click",function(){
+    img.addEventListener("click",function(){
+     localStorage.setItem("cartItem",JSON.stringify(item))
+      window.location.href="checkout.html"
+    })
+    price.addEventListener("click",function(){
+     localStorage.setItem("cartItem",JSON.stringify(item))
+      window.location.href="checkout.html"
+    })
+    name.addEventListener("click",function(){
      localStorage.setItem("cartItem",JSON.stringify(item))
       window.location.href="checkout.html"
     })
@@ -326,6 +335,7 @@ function showProducts(allProducts) {
       checkout.style.backgroundColor = "#FAA619";
       checkout.style.border = "1px solid #FAA619";
       checkout.style.color = "white";
+      checkout.style.marginTop="8px"
       checkout.style.display = "block";
     });
 
@@ -385,3 +395,161 @@ searchData.forEach((item) => {
     showProducts(newData);
   });
 });
+
+document.querySelector("#footer").innerHTML=`<div class="footer_first">
+<div class="footer_first_left">
+    <h1>Subscribe to our awesome emails.</h1>
+    <h6>Get our latest offers and news straight in your box. </h6>
+    <input type="text" placeholder="Please Enter an email adress">
+    <button>Subscribe</button>
+</div>
+<div class="footer_first_left">
+    <h1>Downloads Our apps.</h1>
+    <h6>Shop our products and offer on-the-go.</h6>
+    <div>
+        <a href="https://itunes.apple.com/in/app/id1180884618?ls=1&mt=8"><img
+                src="https://i.ibb.co/Q6fZS06/th-id-OIP.jpg" alt="th-id-OIP"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.applications.lifestyle"> <img
+                id="footer_first_left_img" src="https://i.ibb.co/6nXWjPx/th-id-OIP.jpg" alt="th-id-OIP"></a>
+    </div>
+</div>
+</div>
+
+<hr>
+<div class="footer_category">
+<div>
+    <ul>
+        <li><b>Tops</b></li>
+        <li>Ethnicwear</li>
+        <li>Bottoms</li>
+        <li>Dresses & Jumpsuits</li>
+        <li>Winterwear</li>
+        <li>Lingerie</li>
+        <li>Nightwear</li>
+        <li>Sportswear</li>
+        <li>Beauty</li>
+        <li>Watches & Sunglasses</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><b>Men</b></li>
+        <li>Tops</li>
+        <li>Bottoms</li>
+        <li>Ethnicwear</li>
+        <li>Winterwear</li>
+        <li>Sportswear</li>
+        <li>Innerwear</li>
+        <li>Grooming</li>
+        <li>Watches</li>
+        <li>Sunglasses</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><b>Kids</b></li>
+        <li>Girls Clothing</li>
+        <li>Boys Clothing</li>
+        <li>Infants Girls</li>
+        <li>Infants Boys</li>
+        <li>Winterwear</li>
+        <li>Add ons</li>
+        <li>The Teen Shop</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><b>Shoes & Bags</b></li>
+        <li>Women</li>
+        <li>Men</li>
+        <li>Girls</li>
+        <li>Boys</li>
+        <li>Women Accessories</li>
+        <li>Men Accessories</li>
+        <li>Essential</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><b>Beauty</b></li>
+        <li>Makeup Eyes</li>
+        <li>Makeup Face</li>
+        <li>Makeup Lips</li>
+        <li>Makeup Nails</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><b>Explore</b></li>
+        <li>Online Offers</li>
+        <li>Store Offers</li>
+        <li>Online Gift Card</li>
+        <li>Store Gift Card</li>
+        <li>Store Nearsby</li>
+        <li>EDGE Membership</li>
+        <li>Shop on WhatsApp</li>
+        <li>Fashion VLOG</li>
+        <li>Join CIRCLEMAG</li>
+        <li>SBI Offers</li>
+        <li>Homecentre</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><b>About</b></li>
+        <li>About Us</li>
+        <li>Carrers</li>
+        <li>Take a Tour</li>
+        <li>Blog</li>
+        <li>Store Locator</li>
+        <li>Landmark Cares</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><b>Help</b></li>
+        <li>Contact us</li>
+        <li>Shipping</li>
+        <li>Returns Process</li>
+        <li>Returns Policy</li>
+        <li>Help Centre</li>
+    </ul>
+</div>
+</div>
+
+<hr>
+
+
+<div class="call">
+<div class="call_flex">
+    <div class="call_child"><i class="material-icons">call</i></div>
+    <div>
+        <div>Talk To Us</div>
+        <div>1800-123-1500</div>
+    </div>
+</div>
+<div class="call_flex">
+    <div class="call_child"><i class="material-icons">contact_support</i></div>
+    <div>
+        <div>Help Center</div>
+        <div>help.lifestylestores.com</div>
+    </div>
+</div>
+<div class="call_flex">
+    <div class="call_child"><i class="material-icons">email</i></div>
+    <div>
+        <div>Write To Us</div>
+        <div>help@lifestylestores.com</div>
+    </div>
+</div>
+</div>
+
+<hr>
+<div class="footerfinal">
+<img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="">
+<div>
+    <p>© 2022 RNA Intellectual Property Limited.</p>
+    <p>Terms & Conditions - Privacy Policy</p>
+</div>
+</div>
+<hr>`
