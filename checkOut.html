@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="nav.css">
+<!-- <link rel="stylesheet" href="./signup.css"> -->
+<link rel="stylesheet" href="navbar.css">
 <link rel="stylesheet" href="./checkout.css">
 <link rel="stylesheet" href="./footer.css">
 <body>
@@ -15,9 +16,12 @@
     <div class="first">
         <div>
             <ul>
-                <li>Free Shipping</li>
+                <!-- <li>Free Shipping</li>
                 <li>Click & Collect</li>
-                <li>return to store</li>
+                <li>return to store</li> -->
+                <li><i class="material-icons" style="padding: 0%;border: none;">airport_shuttle</i> Free Shipping</li>
+                <li><i class="material-icons" style="padding: 0%;border: none;">apartment</i> Click & Collect</li>
+                <li><i class="material-icons" style="padding: 0%;border: none;">home</i> return to store</li>
             </ul>
         </div>
         <div>
@@ -25,6 +29,22 @@
                 <li>Download Our Apps |</li>
                 <li>store Locator |</li>
                 <li>Help</li>
+                <li style="position: fixed;top: 11vh;right: 21vh;">
+                    <div > <div id="signUpp">
+                        <button  onclick="demosign()" style="padding: 1.5vh;background-color: white;border: none;font-weight: 900;">SignUp / Sign In</button>
+                    </div>
+                    
+                    
+                    
+                    <div  id="popup">
+                    
+                    </div>
+                    
+                    
+                    <div id="demomain">
+                      
+                    </div> 
+                  </li>
             </ul>
         </div>
     </div>
@@ -221,7 +241,7 @@
             <li><a href="">Sign Up-Sign In</a></li>
             <li><a href="">Basket</a></li>
         </ul>
-    </div>
+
     <h1 id="name"></h1>
     <div id="cartContainer">
         <div id="image">
@@ -513,5 +533,5 @@
 
     
 </script>
-
+<!-- <script src="./signup.js"></script> -->
 </html>

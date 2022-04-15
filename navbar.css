@@ -3,15 +3,37 @@
     padding: 0%;
     box-sizing: border-box;
 }
+.first,
+.second ul {
+    background-color: black;
+    padding: 1.5vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+    list-style: none;
+    
+}
+
+.first>ul {
+    list-style: none;
+}
+
+.first>div ul {
+    display: flex;
+    list-style: none;
+    width: 26vw;
+    justify-content: space-between;
+}
 .navbar {
-    background-color: whitesmoke;
     text-align: center;
-    position: sticky;
-    top: 5vh;
+    /* position: sticky; */
+    top: 6vh;
     z-index: 10;
 }
 
 .navbar ul {
+    background-color: whitesmoke;
     /* display: inline-flex; */
     display: flex;
     list-style: none;
