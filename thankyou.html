@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping At LifeStyle</title>
+    <style>
+        #container{
+            display: flex;
+            justify-content: space-between;
+            margin: 5%;
+        }
+        #topSection{
+            display: flex;
+        }
+        #topSection>div>img{
+            height: 70px;
+            margin: 20px;
+        }
+        #topSection>div{
+            display: flex;
+        }
+        p{
+            color: grey;
+        }
+        #img{
+            margin-top: 20px;
+        }
+        #line{
+            width: 100%
+        }
+        #text{
+            width: 60%;
+        }
+    </style>
+</head> 
+<body>
+    <div id="container">
+        <div id="text">
+            <div id="topSection">
+                <div>
+                    <img src="data:image/png;base64,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" alt="">
+                    <div>
+                        <h1>Thank You, Dear User!</h1>
+                        <p>We appreciate your order</p>
+                    </div>
+                </div>
+            </div>
+            <div id="bottomSection">
+                <p>Your order number is <span id="orderNum"><b style="color: rgb(255, 167, 2);">9485355821</b></span></p>
+                <hr id="line">
+                <p>You'll get it within <span id="days"><b style=" color:rgb(10, 126, 10);">6-8 business days</b></span></p>
+            </div>
+        </div>
+        <div id="img">
+            <img src="https://dd311b21463486cea6e6-ba57f67b7c05f7cbe632f35f74bd7340.lmsin.net/Checkout/img-01.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
