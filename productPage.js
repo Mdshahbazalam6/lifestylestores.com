@@ -417,103 +417,103 @@ document.querySelector("#footer").innerHTML=`<div class="footer_first">
 
 <hr>
 <div class="footer_category">
+<div> 
+    
+        <p><b>Tops</b></p>
+        <p>Ethnicwear</p>
+        <p>Bottoms</p>
+        <p>Dresses & Jumpsuits</p>
+        <p>Winterwear</p>
+        <p>pngerie</p>
+        <p>Nightwear</p>
+        <p>Sportswear</p>
+        <p>Beauty</p>
+        <p>Watches & Sunglasses</p>
+    
+</div>
 <div>
-    <ul>
-        <li><b>Tops</b></li>
-        <li>Ethnicwear</li>
-        <li>Bottoms</li>
-        <li>Dresses & Jumpsuits</li>
-        <li>Winterwear</li>
-        <li>Lingerie</li>
-        <li>Nightwear</li>
-        <li>Sportswear</li>
-        <li>Beauty</li>
-        <li>Watches & Sunglasses</li>
+    
+        <p><b>Men</b></p>
+        <p>Tops</p>
+        <p>Bottoms</p>
+        <p>Ethnicwear</p>
+        <p>Winterwear</p>
+        <p>Sportswear</p>
+        <p>Innerwear</p>
+        <p>Grooming</p>
+        <p>Watches</p>
+        <p>Sunglasses</p>
     </ul>
 </div>
 <div>
-    <ul>
-        <li><b>Men</b></li>
-        <li>Tops</li>
-        <li>Bottoms</li>
-        <li>Ethnicwear</li>
-        <li>Winterwear</li>
-        <li>Sportswear</li>
-        <li>Innerwear</li>
-        <li>Grooming</li>
-        <li>Watches</li>
-        <li>Sunglasses</li>
+    
+        <p><b>Kids</b></p>
+        <p>Girls Clothing</p>
+        <p>Boys Clothing</p>
+        <p>Infants Girls</p>
+        <p>Infants Boys</p>
+        <p>Winterwear</p>
+        <p>Add ons</p>
+        <p>The Teen Shop</p>
     </ul>
 </div>
 <div>
-    <ul>
-        <li><b>Kids</b></li>
-        <li>Girls Clothing</li>
-        <li>Boys Clothing</li>
-        <li>Infants Girls</li>
-        <li>Infants Boys</li>
-        <li>Winterwear</li>
-        <li>Add ons</li>
-        <li>The Teen Shop</li>
-    </ul>
+    
+        <p><b>Shoes & Bags</b></p>
+        <p>Women</p>
+        <p>Men</p>
+        <p>Girls</p>
+        <p>Boys</p>
+        <p>Women Accessories</p>
+        <p>Men Accessories</p>
+        <p>Essential</p>
+    
 </div>
 <div>
-    <ul>
-        <li><b>Shoes & Bags</b></li>
-        <li>Women</li>
-        <li>Men</li>
-        <li>Girls</li>
-        <li>Boys</li>
-        <li>Women Accessories</li>
-        <li>Men Accessories</li>
-        <li>Essential</li>
-    </ul>
+    
+        <p><b>Beauty</b></p>
+        <p>Makeup Eyes</p>
+        <p>Makeup Face</p>
+        <p>Makeup pps</p>
+        <p>Makeup Nails</p>
+    
 </div>
 <div>
-    <ul>
-        <li><b>Beauty</b></li>
-        <li>Makeup Eyes</li>
-        <li>Makeup Face</li>
-        <li>Makeup Lips</li>
-        <li>Makeup Nails</li>
-    </ul>
+    
+        <p><b>Explore</b></p>
+        <p>Onpne Offers</p>
+        <p>Store Offers</p>
+        <p>Onpne Gift Card</p>
+        <p>Store Gift Card</p>
+        <p>Store Nearsby</p>
+        <p>EDGE Membership</p>
+        <p>Shop on WhatsApp</p>
+        <p>Fashion VLOG</p>
+        <p>Join CIRCLEMAG</p>
+        <p>SBI Offers</p>
+        <p>Homecentre</p>
+    
 </div>
 <div>
-    <ul>
-        <li><b>Explore</b></li>
-        <li>Online Offers</li>
-        <li>Store Offers</li>
-        <li>Online Gift Card</li>
-        <li>Store Gift Card</li>
-        <li>Store Nearsby</li>
-        <li>EDGE Membership</li>
-        <li>Shop on WhatsApp</li>
-        <li>Fashion VLOG</li>
-        <li>Join CIRCLEMAG</li>
-        <li>SBI Offers</li>
-        <li>Homecentre</li>
-    </ul>
+    
+        <p><b>About</b></p>
+        <p>About Us</p>
+        <p>Carrers</p>
+        <p>Take a Tour</p>
+        <p>Blog</p>
+        <p>Store Locator</p>
+        <p>Landmark Cares</p>
+    
 </div>
 <div>
-    <ul>
-        <li><b>About</b></li>
-        <li>About Us</li>
-        <li>Carrers</li>
-        <li>Take a Tour</li>
-        <li>Blog</li>
-        <li>Store Locator</li>
-        <li>Landmark Cares</li>
-    </ul>
-</div>
-<div>
-    <ul>
-        <li><b>Help</b></li>
-        <li>Contact us</li>
-        <li>Shipping</li>
-        <li>Returns Process</li>
-        <li>Returns Policy</li>
-        <li>Help Centre</li>
-    </ul>
+    
+        <p><b>Help</b></p>
+        <p>Contact us</p>
+        <p>Shipping</p>
+        <p>Returns Process</p>
+        <p>Returns Popcy</p>
+        <p>Help Centre</p>
+    
 </div>
 </div>
 
@@ -539,16 +539,16 @@ document.querySelector("#footer").innerHTML=`<div class="footer_first">
     <div class="call_child"><i class="material-icons">email</i></div>
     <div>
         <div>Write To Us</div>
-        <div>help@lifestylestores.com</div>
+        <div>help@pfestylestores.com</div>
     </div>
 </div>
 </div>
 
 <hr>
 <div class="footerfinal">
-<img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="">
+<img src="https://i1.lmsin.net/website_images/in/logos/logo-pfestyle.svg " alt="">
 <div>
-    <p>© 2022 RNA Intellectual Property Limited.</p>
+    <p>© 2022 RNA Intellectual Property pmited.</p>
     <p>Terms & Conditions - Privacy Policy</p>
 </div>
 </div>

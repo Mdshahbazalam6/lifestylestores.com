@@ -32,14 +32,16 @@
         } 
         #checkOut{
             justify-content: right;
+            width: 30%;
         }
         #checkoutbtn{
             color: white;
             background-color: #e2910f;
             padding: 10px;
-            width: 200px;
+            width: 300px;
             height: 40px;
             border-radius: 10px;
+            justify-content: center;
         }
         #container{
             display: flex;        }
@@ -49,7 +51,7 @@
             border: orange;
         }
         #checkout{
-            width: 20%;
+            width: 30%;
             height: auto;
             border: green;
         }
@@ -61,6 +63,7 @@
             height: 40PX;
             color: white;
             background-color: orange;
+            margin: auto;
         }
         #paymentimg{
             display: grid;
@@ -77,6 +80,13 @@
         #bottom{
             display: flex;
             gap: 50px;
+            color:grey;
+            text-decoration: none;
+        }
+        #quantity{
+            width: 60px;
+            height: 30px;
+            float: none;
         }
     </style>
 </head>
@@ -122,8 +132,6 @@
                         <option value="six">6</option>
                         <option value="seven">7</option>
                         <option value="eight">8</option>
-                        <option value="nine">9</option>
-                        <option value="ten">10</option>
                       </select>
                   </td>
                   <td>
@@ -165,15 +173,15 @@
             <p>Need help? We're here for you.</p>
            <br>
                 <a href="tel:1800-123-1555" id="contactsLink1">
-                    <span>Call Customer Support at</span>
-                    <strong class="itr">&nbsp;1800-123-1555 & lrm</strong>
+                    <span style="text-decoration: none; color: grey;">Call Customer Support at</span>
+                    <strong class="itr" style="text-decoration: none; color: grey;">&nbsp;1800-123-1555</strong>
                 </a>
                 <br>
-                <a href="/in/en/write-to-us" id="contactsLink2">
+                <a href="/in/en/write-to-us" id="contactsLink2" style="text-decoration: none; color: grey;">
                     Write To us
             </a>
             <br>
-                <a href="https://helpin.lifestylestores.com/support/solutions/folders/44001186286">Return Policy</a> 
+                <a href="" style="text-decoration: none; color: grey;">Return Policy</a> 
         </div>
         <div>
             <h4>Subtotal:</h4>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men</title>
+  </head>
+  <link rel="stylesheet" href="./signup.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="./footer.css">
+  <link rel="stylesheet" href="./productPage.css" />
+  <style>
+    
+
+#signUpp{
+ 
+ position: fixed;
+ top: 10px;
+ right: 10px;
+ }
+ 
+ 
+  </style>
+  <body>
+    <div class="first">
+      <div>
+          <ul>
+              <li>Free Shipping</li>
+              <li>Click & Collect</li>
+              <li>return to store</li>
+          </ul>
+      </div>
+      <div>
+          <ul>
+              <li>Download Our Apps |</li>
+              <li>store Locator |</li>
+              <li>Help</li>
+              <li style="position: fixed;top: 6vh;right: 21vh;">
+                    <div > <div id="signUpp">
+                        <button  onclick="demosign()" style="padding: 1.5vh;background-color: white;border: none;font-weight: 900;">SignUp / Sign In</button>
+                    </div>
+                    
+                    
+                    
+                    <div  id="popup">
+                    
+                    </div>
+                    
+                    
+                    <div id="demomain">
+                      
+                    </div> 
+                  </li>
+          </ul>
+      </div>
+  </div>
+
+  <div class="navbar">
+      
+      <ul>
+          <li><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="lifestyle"></li>
+          <li><a href="">Women</a></li>
+          <li class="active"><a href="">Men</a>
+            <div class="submenue">
+                <ul>
+                  <li><a href="productPage.html">Top wear</a>
+                      <div class="in">
+                          <div>
+                              <b><a href="productPage.html">Shop in Top Wear</a> </b>
+                              <hr style="width:10vw; margin-top: 2vh;margin-bottom: 2vh;margin-left: 0vw;">
+                              <p><a href="productPage.html">Casual Shirt</a></p>
+                              <p><a href="productPage.html">Formal Shirt</a></p>
+                              <p><a href="productPage.html">Polos</a></p>
+                              <p>T-Shirt</p>
+                              <p>Jackets</p>
+                              <p>Hoodies & Sweethearts</p>
+                          </div>
+                          <div>
+                              <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg" alt="">
+                          </div>
+                          <div><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg" alt=""></div>
+                          <div><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg" alt=""></div>
+                      </div>
+                  </li>
+                  <li>Bottomwear
+                      <div class="in">
+                          <div>
+                              <b>Shop in Bottomwear</b>
+                              <hr style="width:10vw; margin-top: 2vh;margin-bottom: 2vh;margin-left: 0vw;">
+                              <p>Casual Trousers</p>
+                              <p>Formal Trousers</p>
+                              <p>Jeans</p>
+                              <p>Track Pants</p>
+                              <p>Shorts & 3/4ths</p>
+                          </div>
+                          <div>
+                              <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Bottomwear-Desktop1-21Sept2020.jpg" alt="">
+                          </div>
+                          <!-- <div><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg" alt=""></div>
+                          <div><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg" alt=""></div> -->
+                      </div>
+                  </li>
+                  <li>Activewear
+                      <div class="in">
+                          <div>
+                              <b>Shop in Activewear</b>
+                              <hr style="width:10vw; margin-top: 2vh;margin-bottom: 2vh;margin-left: 0vw;">
+                              <p>Polos</p>
+                              <p>Sports T-Shirts</p>
+                              <p>Track Pants</p>
+                              <p>Sports shoes</p>
+                          </div>
+                          <div>
+                              <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Activewear-Desktop1-21Sept2020.jpg" alt="">
+                          </div>
+                          <!-- <div><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg" alt=""></div>
+                          <div><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg" alt=""></div> -->
+                      </div>
+                  </li>
+                  <li>Ethnic
+                      <div class="in">
+                          <div>
+                              <b>Shop in Ethnic</b>
+                              <hr style="width:10vw; margin-top: 2vh;margin-bottom: 2vh;margin-left: 0vw;">
+                              
+                              <p>Kurtas</p>
+                              <p>Waistcoats</p>
+                              <p>Pyjamas</p>                              
+                          </div>
+                          <div>
+                              <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Ethnicwear-Desktop1-21Sept2020.jpg" alt="">
+                          </div>
+                      </div>
+                  </li>
+                  <li>Winterwear</li>
+                  <li>Innerwear</li>
+                  <li>WFH Edits</li>
+                  <li>Watches</li>
+                  <li>Sunglasses</li>
+                  <li>Shoes</li>
+                  <li>Grooming</li>
+                  <li>Add-Ons</li>
+                  <li>More</li>
+              </ul> 
+            </div>
+          </li> 
+          
+          <li class="active"><a href="">Kids</a>
+              <div class="submenue">
+                  <ul>
+                    <li>Boys
+                        <div class="in">
+                            <div>
+                                <b>Shop in Top Wear</b>
+                                <hr style="width:10vw; margin-top: 2vh;margin-bottom: 2vh;margin-left: 0vw;">
+                                <p>Casual Shirt</p>
+                                <p>Formal Shirt</p>
+                                <p>Polos</p>
+                                <p>T-Shirt</p>
+                                <p>Jackets</p>
+                                <p>Hoodies & Sweethearts</p>
+                            </div>
+                            <div>
+                                <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-BoysClothing-Banner1-09Feb2022.jpg" alt="">
+                            </div>
+                            <div><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-BoysClothing-Banner2-09Feb2022.jpg" alt=""></div>
+                            <div><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-BoysClothing-Banner4-09Feb2022.jpg" alt=""></div>
+                        </div>
+                    </li>
+                    <li>Girls
+                        <div class="in">
+                            <div>
+                                <b>Shop in Bottomwear</b>
+                                <hr style="width:10vw; margin-top: 2vh;margin-bottom: 2vh;margin-left: 0vw;">
+                                <p>Casual Trousers</p>
+                                <p>Formal Trousers</p>
+                                <p>Jeans</p>
+                                <p>Track Pants</p>
+                                <p>Shorts & 3/4ths</p>
+                            </div>
+                            <div>
+                                <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-GirlsClothing-Banner1-09Feb2022.jpg" alt="">
+                            </div>
+                            <div><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-GirlsClothing-Banner2-09Feb2022.jpg" alt=""></div> -->
+                            <div><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-GirlsClothing-Banner4-09Feb2022.jpg" alt=""></div> -->
+                        </div>
+                    </li>
+                    <li>Infants
+                        <div class="in">
+                            <div>
+                                <b> T-Shirts</b>
+                                <hr style="width:10vw; margin-top: 2vh;margin-bottom: 2vh;margin-left: 0vw;">
+                                <p>Tops</p>
+                                <p>Dresses & Jumpsuits</p>
+                                <p>Shirts</p>
+                                <p>Shorts</p>
+
+                            </div>
+                            <div>
+                                <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-Infants-Banner1-09Feb2022.jpg" alt="">
+                            </div>
+                             <div><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-Infants-Banner2-09Feb2022.jpg" alt=""></div>
+                             <div><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-Infants-Banner3-09Feb2022.jpg" alt=""></div> --> -->
+                        </div>
+                    </li>
+                    <li>Top Brands
+                        <div class="in">
+                            <div>
+                                <b>Shop in Top Brands</b>
+                                <hr style="width:10vw; margin-top: 2vh;margin-bottom: 2vh;margin-left: 0vw;">
+                                
+                                <p>Fame forever</p>
+                                <p>Waistcoats</p>
+                                <p>Pyjamas</p>    
+                                <p>JUNIORS</p>
+                                   <p>MELANGE</p>
+                                  <p>BOSSINI</p>
+                                   <p>Denimize By FameForever</p>
+                                  <p>Allen Solly </p>
+                            </div>
+                            <div>
+                                <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-TopBrands-Banner1-09Feb2022.jpg" alt="">
+                            </div>
+                            <div>
+                              <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-TopBrands-Banner2-09Feb2022.jpg" alt="">
+                          </div>
+                          <div>
+                              <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-TopBrands-Banner3-09Feb2022.jpg" alt="">
+                          </div>
+                        </div>
+                    </li>
+                    <li>Winterwear</li>
+                    <li>Innerwear</li>
+                    <li>WFH Edits</li>
+                    <li>Watches</li>
+                    <li>Sunglasses</li>
+                    <li>Shoes</li>
+                    <li>Grooming</li>
+                    <li>Add-Ons</li>
+                    <li>More</li>
+                </ul> 
+              </div>
+          </a></li>
+          <li><a href="">Shoes & Bags</a></li>
+          <li><a href="">Beauty</a></li>
+          <li><input type="text" placeholder="🔍 What are you looking for?"></li>
+      </ul>
+
+
+
+   
+
+
+<div id="demomain">
+      
+    </div> 
+    
+    <h1 id="topName">Topwear</h1>
+    <div id="topSection">
+      <div>
+        <img
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/men-tops-casualshirts.jpg"
+          alt=""
+        />
+        <p>Casual Shirts</p>
+      </div>
+      <div>
+        <img
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/men-tops-formalshirts.jpg"
+          alt=""
+        />
+        <p>Formal Shirts</p>
+      </div>
+      <div>
+        <img
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/men-tops-jackets.jpg"
+          alt=""
+        />
+        <p>Jackets</p>
+      </div>
+      <div>
+        <img
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/men-tops-polos.jpg"
+          alt=""
+        />
+        <p>Polos</p>
+      </div>
+      <div>
+        <img
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/men-tops-tshirts.jpg"
+          alt=""
+        />
+        <p>T-Shirts</p>
+      </div>
+    </div>
+
+    <div id="sortBySearch">
+      <select name="" id="price">
+        <option value="">Price</option>
+        <option value="500">Below 500</option>
+        <option value="1000">Below 1000</option>
+        <option value="1500">Below 1500</option>
+        <option value="2000">Below 2000</option>
+      </select>
+      <select name="" id="search">
+        <option value="Design">Design</option>
+        <option value="Printed">Printed</option>
+        <option value="Solid">Solid</option>
+        <option value="Checked">Checked</option>
+        <option value="Striped">Striped</option>
+      </select>
+      <select name="" id="search">
+        <option value="Fit">Fit</option>
+        <option value="Regular">Regular</option>
+        <option value="Slim">Slim</option>
+        <option value="Custom">Custom</option>
+        <option value="Fit">Fit</option>
+      </select>
+      <select name="" id="search">
+        <option value="Type">Type</option>
+        <option value="Polo Neck">Polo Neck</option>
+        <option value="Casual">Casual</option>
+        <option value="Hooded">Hooded</option>
+        <option value="Denim">Denim</option>
+        <option value="Bombers">Bombars</option>
+      </select>
+      <select name="" id="search">
+        <option value="Fabric">Fabric</option>
+        <option value="Cotton">Cotton</option>
+        <option value="Polyester">Polyester</option>
+        <option value="Linen">Linen</option>
+        <option value="Nylon">Nylon</option>
+      </select>
+      <select name="" id="">
+        <option value="Size">Size</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+        <option value="XS">XS</option>
+      </select>
+      <select name="" id="">
+        <option value="Color">Color</option>
+        <option value="Blue">Blue</option>
+        <option value="White">White</option>
+        <option value="Green">Green</option>
+        <option value="Black">Black</option>
+        <option value="Red">Red</option>
+        <option value="Yellow">Yellow</option>
+      </select>
+      <select name="" id="search">
+        <option value="">Brand</option>
+        <option value="Adidas">Adidas</option>
+        <option value="Allen Solly">Allen Solly</option>
+        <option value="American Eagle">American Eagle</option>
+        <option value="Arrow">Arrow</option>
+        <option value="Benetton">Benetton</option>
+      </select>
+      <select name="" id="">
+        <option value="Browse">Browse</option>
+        <option value="New">New</option>
+        <option value="30% OFF">30% OFF</option>
+        <option value="">40% OFF</option>
+        <option value="">15% OFF</option>
+      </select>
+      <select name="" id="">
+        <option value="">Promotions</option>
+        <option value="">Sale</option>
+        <option value="">Buy 2 Get 3</option>
+        <option value="">Buy 4 Get 5</option>
+      </select>
+      <select name="" id="search">
+        <option value="Sleeve Length">Sleeve Length</option>
+        <option value="Full Sleeve">Full Sleeve</option>
+        <option value="Half Sleeves">Half Sleeves</option>
+        <option value="Raglan Sleeve">Raglan Sleeve</option>
+      </select>
+      <select name="" id="">
+        <option value="">Discount Range</option>
+        <option value="50% and above">50% and above</option>
+        <option value="40% and above">40% and above</option>
+        <option value="30% and above">30% and above</option>
+        <option value="20% and above">20% and above</option>
+      </select>
+    </div>
+    <div id="filter">
+      <div><p>5711 products</p></div>
+      <div>
+        <p>Sort by</p>
+        <select name="filter" id="sortByPrice">
+          <option value="">New Arrivals</option>
+          <option value="LtoH">Price - Low to High</option>
+          <option value="HtoL">Price - High to Low</option>
+          <option value="">Discount</option>
+        </select>
+      </div>
+    </div>
+    <div id="productContainer">
+
+    </div>
+
+    
+
+
+
+
+
+
+
+    <hr>
+<!-- footer -->
+    <div  id="footer">
+    
+  
+
+
+  </div> 
+ 
+  </body>
+
+
+  <script src="./productPage.js"></script>
+ <script src="./signup.js"></script>
+</html>
