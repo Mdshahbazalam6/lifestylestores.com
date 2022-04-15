@@ -723,6 +723,8 @@ margin: 0%;
         margin: 2% 0%;
         width: 100%;
         display: flex;
+        position: relative;
+        right: 50px;
      
     }
     
@@ -761,17 +763,33 @@ margin: 0%;
 
 }
 #smain{
+    position: sticky;
+    top:0px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows:auto auto auto ;
 }
-#smain > div{
-    border:1px solid grey;
-    padding:13% 0%;
-    margin: 1% 0%;
+
+
+
+
+
+#mainbox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2% 5%;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
+#box1{
 
-
-
-
-
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+#box2{
+    flex-grow: 3;
+   padding-left: 5%;
+}
+img{
+    width: 100%
+}

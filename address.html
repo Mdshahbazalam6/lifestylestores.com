@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<link rel="stylesheet" href="Adress.css"/>
+<link rel="stylesheet" href="address.css"/>
 <body>
     <div id="nav">
         <div><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg" /></div>
@@ -353,10 +353,7 @@
             <p>Your order summary</p>
             <hr>
             <div id="smain">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+              
             </div>
         </div>
        
@@ -377,5 +374,55 @@
            alert("Please fill the details")
        }
    }
-   
+
+  
+</script>
+
+<script>
+
+
+    
+var cartDatas=JSON.parse(localStorage.getItem("cartItem"))
+var cartData=[]
+cartData.push(cartDatas)
+console.log(cartData)
+
+// var totalsum= cartData.reduce(function(sum,elem, index, arr){
+//   return  sum+=Number(elem.price);
+
+// },0)
+
+// document.querySelector("p").innerText="You have"+" "+cartData.length+" "+"items and total price is"+ " "+ totalsum
+ 
+cartData.forEach(function(element,Index) {
+    var mainbox =document.createElement("div");
+    mainbox.setAttribute("id","mainbox")
+    var box1 =document.createElement("div");
+    box1.setAttribute("id","box1")
+
+    var box2 =document.createElement("div");
+    box2.setAttribute("id","box2")
+
+    var img=document.createElement("img");
+    img.setAttribute("id","pic")
+    img.src=element.image;
+     
+    var brand = document.createElement("h4")
+    brand.innerText="LIFESTYLE";
+
+    var name = document.createElement("p")
+    name.innerText=element.name;
+
+    var price= document.createElement("h4");
+    price.innerText="Price: ₹" + element.price;
+
+  
+  
+     box1.append(img)
+     box2.append(brand,name,price);
+     mainbox.append(box1,box2);
+     document.querySelector("#smain").append(mainbox)
+
+
+});
 </script>
