@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Men</title>
   </head>
-  <link rel="stylesheet" href="./signup.css"/>
+  <link rel="stylesheet" href="./signup.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="./footer.css">
   <link rel="stylesheet" href="./productPage.css" />
+  <style>
+    
+
+#signUpp{
+ 
+ position: fixed;
+ top: 10px;
+ right: 10px;
+ }
+ 
+ 
+  </style>
   <body>
     <div class="first">
       <div>
@@ -25,6 +37,22 @@
               <li>Download Our Apps |</li>
               <li>store Locator |</li>
               <li>Help</li>
+              <li style="position: fixed;top: 6vh;right: 21vh;">
+                    <div > <div id="signUpp">
+                        <button  onclick="demosign()" style="padding: 1.5vh;background-color: white;border: none;font-weight: 900;">SignUp / Sign In</button>
+                    </div>
+                    
+                    
+                    
+                    <div  id="popup">
+                    
+                    </div>
+                    
+                    
+                    <div id="demomain">
+                      
+                    </div> 
+                  </li>
           </ul>
       </div>
   </div>
@@ -218,12 +246,16 @@
           <li><a href="">Shoes & Bags</a></li>
           <li><a href="">Beauty</a></li>
           <li><input type="text" placeholder="🔍 What are you looking for?"></li>
-          <li><a href="">Sign Up-Sign In</a></li>
-          <li><a href="">Basket</a></li>
       </ul>
-    <div>
-      <button id="signupbtn" onclick="signup()">Signup</button>
-    </div>
+
+
+
+   
+
+
+<div id="demomain">
+      
+    </div> 
     
     <h1 id="topName">Topwear</h1>
     <div id="topSection">
@@ -370,86 +402,11 @@
     </div>
 
     
-<div id="signUp">
-  <div>
-    <h1>Sign up or Sign in</h1>
-    <p
-    id="com">Enjoy the convenience of a single account across all participating brands</p>
-    <label>Mobile Number</label>
-    <input type="tel" id="mobile" placeholder="Enter your mobile number"/>
-    <!-- <div id="alert">please enter mobile number</div> -->
-    <p>By creating your account you agree to our <a>Terms and Conditions</a></p>
-   <div id="hrtag"></div>
-    <button id="continue" onclick="signin()">CONTINUE</button>
-    <button id="close" onclick="closes()">✕</button>
-  </div>
-
-</div>
-
-
-<div id="Sotp">
-  <div> 
-    <h1>Sign up or Sign in</h1>
-    <p
-    id="com">Enjoy the convenience of a single account across all participating brands</p>
-    <label>Verify with OTP</label>
-    
-    <p>sent to +91<a>change?</a></p>
-    <input type="tel" id="otp" placeholder=""/>
-    <!-- <div id="alert1">plese enter the OTP</div> -->
-    <!-- <div id="alert2">plese enter current OTP</div> -->
-    <p>We've sent your code. Try again in --</p>
-    <div id="otphrtag"></div>
-    <button id="close" onclick="closes()">✕</button>
-    
-    <button id="otpcontinue" onclick="otpsignin()">CONTINUE</button>
- 
-   
-  </div>
-
-</div>
-
-
-
-<div id="Semail">
-  <div>
-    <h1>Link your account</h1>
-    <p>Existing user please login to your account to link your account to your phone number. it's one life time process</p>
-    <input type="email" id="email" placeholder="Your Email"/>
-    <!-- <div id="alert3">Please enter the Email</div> -->
-    <button id="proceed" onclick="proceed()" >PROCEED</button>
-    <button id="skip" onclick="skip()">Skip</button>
-    
-  </div>
-
-</div>
 
 
 
 
-<div id="Saddress">
-  <div>
-    <button id="close" onclick="closes()">✕</button>
-    <h1>How do we address you?</h1>
-    <div>
-      <input type="text" id="fname" placeholder="First Name"/>
-     
-    <input type="text" id="lname" placeholder="Last Name"/>
-   
-    </div> 
-    <!-- <div id="alert5">Please fill the details</div>  -->
-  <div id="Sadcheck">
-    <div><input type="checkbox" /> </div>
-    <div><p>Enroll me for Landmark Rewards</p></div>
-  </div>
 
-    <p>By creating your account you agree to our <a>Term and Conditions</a></p>
-    <div id="ahrtag"></div>
-    <div><button id="goback" onclick="goback()" >GO BACK</button>
-      <button id="addressproceed" onclick="addressproceed()" >PROCEED</button></div>
-  </div>
-
-</div>
 
 
     <hr>
@@ -465,5 +422,5 @@
 
 
   <script src="./productPage.js"></script>
-  <script src="./signup.js"></script>
+ <script src="./signup.js"></script>
 </html>
