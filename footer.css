@@ -56,6 +56,7 @@ border-bottom-right-radius: 3px;
 width: 20vw;
 display: flex;
 justify-content: space-between;
+
 margin: auto;
 margin-top: 2vh;
 }
@@ -70,17 +71,26 @@ width: 8vw;
 
 .footer_category {
 display: grid;
+gap: 1vw;
 grid-template-columns: repeat(5, 1fr);
+grid-template-rows: auto;
 width: 80vw;
 margin: auto;
-line-height: 4vh;
-}
 
-.footer_category>div>ul {
-list-style: none;
+margin-left: 12vw;
+
+}
+.footer_category>div{
+    margin-top: 3vh;
+}
+.footer_category>div>p {
+    line-height: 4vh;
+
 /* border: 1px solid red; */
-padding: 3vh;
+/* padding: 0.5h; */
+text-align: left;
 color: rgb(154, 150, 150);
+
 }
 
 .call {

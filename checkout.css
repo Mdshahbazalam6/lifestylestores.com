@@ -6,29 +6,32 @@
     font-weight: 500;
     padding: 20px;
     margin-bottom: -20px;
+    padding: 26px 112px;
+    text-align: left;
     font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,
   }
   
 #cartContainer{
     display: flex;
     width: 100%;
+    padding: 0px 90px;
     
 }
 
 body{
     font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
 
-    padding: 0px 90px;
+    /* padding: 16px; */
+   
 }
-#cartContainer>div{
-    padding: 16px;
-}
+
 #image{
     width: 100%; 
 }
 #image+div{
     
-    width: 30%;
+    width: 50%;
+    text-align: left;
 }
 #image{
    
@@ -36,7 +39,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     height: fit-content;
-    width: fit-content;
+    /* width: fit-content; */
     
 }
 #image>div>img{
@@ -48,6 +51,7 @@ body{
     width: 332px;
     
     overflow: hidden;
+    /* justify-content: center; */
     /* align-items: flex-start; */
 }
 #image>div>img:hover{
@@ -65,7 +69,7 @@ body{
 }
 #image>div:nth-child(3)>img{
     width: 350px;
-    transform: scale(1.7); 
+    transform: scale(3); 
 }
 
 #tax{
@@ -170,6 +174,7 @@ body{
 }
 #Overview{
     margin-bottom: 10px;
+    
 }
 
 .paymentHead+input{
@@ -189,6 +194,8 @@ body{
 
 #costomerView>div{
     display: flex;
+    padding: 0px 90px;
+    text-align: left;
     
 
 }
@@ -196,7 +203,9 @@ body{
     font-size: 39px;
     font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
     font-weight: 100;
+    margin: 0px 90px;
     padding: 78px 0px 15px 8px;
+    text-align: left;
 }
 #costomerView>div>div{
  padding: 8px;
@@ -275,7 +284,7 @@ body{
 }
 
 #image{
-    margin-left: 90px;
+    margin-left: 10px;
     
 }
 #image+div{
@@ -308,7 +317,7 @@ body{
 }
 #costomerView>h1{
     font-size: 29px;
-
+    margin: 0px 40px;
     padding: 78px 0px 1px 8px;
 }
 #costomerView
@@ -318,14 +327,31 @@ body{
 #costomerView+hr{
     margin: 40px ;
 }
+#costomerView>div{
+    display: flex;
+    padding: 0px 40px;
+    text-align: left;
+    
+
+}
+
 }
   @media screen and (max-width: 600px) {
     #image{
         margin-left: 0px;
         
     }
+    #costomerView>div{
+        display: flex;
+        padding: 0px 0px;
+        text-align: left;
+        justify-content: center;
+        
+    
+    }
+   
 #image>div>img{
-    width: 250px;
+    width: 200px;
 }
 #costomerView>div>div>h5{
     font-size: 14px;
@@ -337,7 +363,7 @@ body{
 }
 #costomerView>h1{
     font-size: 23px;
-
+    margin: 0px 10px;
     padding: 78px 0px 1px 8px;
 }
 
