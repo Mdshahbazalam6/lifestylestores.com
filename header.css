@@ -451,7 +451,7 @@ hr{
     display: none;
     position: absolute;
     font-size: 2vw;
-    top:815vh;
+    top:807vh;
     right: 3vw;
     /* display: block; */
 }
@@ -764,3 +764,16 @@ hr{
     text-align: left;
     padding-left: 1vw;
 }
+
+
+
+/* <div class="navbar">
+        
+<ul>
+    <li><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="lifestyle"></li>
+    <li><a href="">Women</a></li>
+    <li class="active"><a href="">Men</a>
+      <div class="submenue">
+          <ul>
+            <li>Top wear
+                <div class="in"> */
