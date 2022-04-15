@@ -352,10 +352,30 @@
         <div id="psummary">
             <p>Your order summary</p>
             <hr>
-            <div id="smain">
+            <div id="notScroll">
+                <div id="smain">
               
+                </div>
+                <hr>
+                <div id="subtotal">
+                    <h4>Subtotal:</h4>
+                    <h4 id="h3"></h4>
+                </div>
+                <hr>
+                <div id="subtotal">
+                    <h4>Standard Ground Shipping:</h4>
+                    <h4>Free</h4>
+                </div>
+                <hr>
+                <div id="subtotal">
+                    <h4>Total</h4>
+                    <h4 id="h3"></h4>
+                </div>
+                <hr>
             </div>
-        </div>
+          
+            </div>
+         
        
     </div>
 </body>
@@ -382,17 +402,17 @@
 
 
     
-var cartDatas=JSON.parse(localStorage.getItem("cartItem"))
-var cartData=[]
-cartData.push(cartDatas)
+var cartData=JSON.parse(localStorage.getItem("cartProducts"))
+
+
 console.log(cartData)
 
-// var totalsum= cartData.reduce(function(sum,elem, index, arr){
-//   return  sum+=Number(elem.price);
+var totalsum= cartData.reduce(function(sum,elem, index, arr){
+  return  sum+=Number(elem.price);
 
-// },0)
+},0)
 
-// document.querySelector("p").innerText="You have"+" "+cartData.length+" "+"items and total price is"+ " "+ totalsum
+document.querySelector("#h3").innerText="₹"+ " "+totalsum;
  
 cartData.forEach(function(element,Index) {
     var mainbox =document.createElement("div");
@@ -407,14 +427,14 @@ cartData.forEach(function(element,Index) {
     img.setAttribute("id","pic")
     img.src=element.image;
      
-    var brand = document.createElement("h4")
+    var brand = document.createElement("p")
     brand.innerText="LIFESTYLE";
 
     var name = document.createElement("p")
     name.innerText=element.name;
 
-    var price= document.createElement("h4");
-    price.innerText="Price: ₹" + element.price;
+    var price= document.createElement("p");
+    price.innerText="Price: ₹" +" "+ element.price;
 
   
   

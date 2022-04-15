@@ -29,19 +29,17 @@
     }
     
     #pmain{
-        padding:1.5% 6%;
+        padding:1.5% 5%;
         display: flex;
     
     }
-    #pmain > div:nth-last-child(1){
-        border: 1px solid gainsboro;
-    }
+
     #address{
-        flex-grow: 4;
+       width:67%;
         
     }
     #psummary{
-        flex-grow: 3;
+        width: 33%;
     }
     #address > div{
         display: flex;
@@ -755,41 +753,93 @@ margin: 0%;
 
 }
 #psummary{
-    padding:2.5%
+
+    border: 1px solid gainsboro;
+    padding-bottom: 0vh;
+  
 }
 #psummary p{
     font-weight:lighter;
     text-align: center;
-
+ 
 }
-#smain{
+
+#notScroll{
+   
     position: sticky;
     top:0px;
+ 
+  
+}
+
+#smain{
+    padding-top: 2.8vh;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows:auto auto auto ;
+    
+    overflow-y: scroll;
+    height: 50vh;
+
 }
+
 
 
 
 
 
 #mainbox{
+  
+
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin: 2% 5%;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    width: 90%;
+    margin: 0% 5%;
+    margin-top: 1.7vh;
+    border-bottom:1px solid gainsboro ;
+   
+    text-align: start;
+    font-size: 2vh;
+    font-weight: 100;
 }
 #box1{
 
     width: 20%;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+   
 }
 #box2{
+    width: 50%;
     flex-grow: 3;
-   padding-left: 5%;
+   padding:0% 3%;
 }
-img{
-    width: 100%
+#pic{
+    width: 10.5vh;
+    height: 10.5vh;
+}
+#box2 p{
+    color: grey;
+}
+
+#box2 p{
+    text-align: start;
+}
+#box2 p:nth-last-child(1){
+    text-align: end;
+margin-bottom: 1.5vh;
+}
+#box2 p:nth-last-child(2){
+    color: black;
+}
+#box2 p:nth-child(1){
+   margin-top: 0;
+}
+#psummary hr{
+    width:56.6vh
+}
+#subtotal{
+    position: relative;
+ color: rgba(0, 0, 0, 0.712);
+    display: flex;
+    justify-content: space-between;
+    padding:0vh 3vh
 }
