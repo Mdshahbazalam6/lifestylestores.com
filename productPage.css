@@ -1,3 +1,4 @@
+
 #topSection {
   display: flex;
   flex-wrap: wrap;
@@ -7,6 +8,7 @@
   padding: 0px 90px;
   font-weight: 548;
   font-size: 35px;
+  margin-bottom: 20px;
   font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
 }
@@ -39,24 +41,25 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  height: 180px;
+  
   margin: 0px 65.706px;
   padding: 0px 20px;
   font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
-  position: static;
+
+
 }
 #productContainer > div {
   padding: 8px;
+  margin-bottom:10px ;
 }
-/* #productContainer:hover{
 
-} */
 
 #productContainer > div > button {
   width: 100%;
   background-color: #faa619;
-  padding: 6px 16px;
+  border-radius: 2px;
+  padding: 10px 16px;
   font-size: 16px;
   cursor: pointer;
 
@@ -65,11 +68,13 @@
 }
 #productContainer > div:hover {
   cursor: pointer;
-  /* position: absolute; */
-  height: 105%;
+  
 }
 #productContainer > div > img {
   width: 100%;
+}
+#productContainer > div > img :hover{
+  transform: scale(1.4);
 }
 #productContainer > div > p {
   font-size: 13px;
@@ -114,7 +119,7 @@
   display: flex;
   align-items: center;
   font-weight: 600;
-  /* justify-content: end; */
+  
 }
 #filter select {
   padding: 7px 16px;
@@ -130,11 +135,17 @@
   #filter {
     padding: 0px 17px;
   }
+  #topName{
+    margin-left: 9px;
+    margin-bottom: 7px;
+  }
   #productContainer {
     margin: 0px;
   }
+ 
   #sortBySearch {
     grid-template-columns: repeat(4, 1fr);
+    margin-left:15px ;
   }
   #productContainer {
     grid-template-columns: repeat(3, 1fr);

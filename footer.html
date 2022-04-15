@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .footer_first {
+    /* border: 1px solid #cecece; */
+    width: 80vw;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    margin-top: 4vh;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+    line-height: 4vh;
+}
+
+.footer_first_left {
+    width: 30vw;
+    height: 30vh;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+
+.footer_first_left h1 {
+    font-size: 1.7vw;
+}
+
+.footer_first_left h6 {
+    color: rgb(157, 152, 152);
+}
+
+.footer_first_left input {
+    width: 20vw;
+    margin-top: 4vh;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    outline: none;
+    border: whitesmoke;
+    padding: 1.5vh;
+}
+
+.footer_first_left button {
+    background-color: black;
+    color: white;
+    padding: 1.5vh;
+    margin-left: -1vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.footer_first_left>div {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+.footer_first_left>div img {
+    width: 13vw;
+}
+
+#footer_first_left_img {
+    width: 8vw;
+}
+
+.footer_category {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80vw;
+    margin: auto;
+    line-height: 4vh;
+}
+
+.footer_category>div>ul {
+    list-style: none;
+    /* border: 1px solid red; */
+    padding: 3vh;
+    color: rgb(154, 150, 150);
+}
+
+.call {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80vw;
+    margin: auto;
+    gap: 2vw;
+}
+
+.call_flex {
+    display: flex;
+    width: 15vw;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4vh;
+}
+
+.call_flex>div>div {
+    padding-left: 2vh;
+}
+
+.material-icons {
+    padding: 2vh;
+    border-radius: 100%;
+    border: 1px solid #cecece;
+    font-size: 1.5vw;
+}
+
+.footerfinal {
+    display: flex;
+    width: 25vw;
+    margin-left: 10vw;
+    margin-top: 2vh;
+}
+
+.footerfinal img {
+    width: 5vw;
+}
+
+.footerfinal div {
+    padding-left: 2vh;
+}
+hr{
+   
+    width: 72vw;
+    margin: auto;
+    margin-top: 10vh;
+    color: #e6e1e1;
+    height: .2vh;
+}
+
+    </style>
+</head>
+<body>
+    <div class="footer_first">
+        <div class="footer_first_left">
+            <h1>Subscribe to our awesome emails.</h1>
+            <h6>Get our latest offers and news straight in your box. </h6>
+            <input type="text" placeholder="Please Enter an email adress">
+            <button>Subscribe</button>
+        </div>
+        <div class="footer_first_left">
+            <h1>Downloads Our apps.</h1>
+            <h6>Shop our products and offer on-the-go.</h6>
+            <div>
+                <a href="https://itunes.apple.com/in/app/id1180884618?ls=1&mt=8"><img
+                        src="https://i.ibb.co/Q6fZS06/th-id-OIP.jpg" alt="th-id-OIP"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.applications.lifestyle"> <img
+                        id="footer_first_left_img" src="https://i.ibb.co/6nXWjPx/th-id-OIP.jpg" alt="th-id-OIP"></a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="footer_category">
+        <div>
+            <ul>
+                <li><b>Tops</b></li>
+                <li>Ethnicwear</li>
+                <li>Bottoms</li>
+                <li>Dresses & Jumpsuits</li>
+                <li>Winterwear</li>
+                <li>Lingerie</li>
+                <li>Nightwear</li>
+                <li>Sportswear</li>
+                <li>Beauty</li>
+                <li>Watches & Sunglasses</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><b>Men</b></li>
+                <li>Tops</li>
+                <li>Bottoms</li>
+                <li>Ethnicwear</li>
+                <li>Winterwear</li>
+                <li>Sportswear</li>
+                <li>Innerwear</li>
+                <li>Grooming</li>
+                <li>Watches</li>
+                <li>Sunglasses</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><b>Kids</b></li>
+                <li>Girls Clothing</li>
+                <li>Boys Clothing</li>
+                <li>Infants Girls</li>
+                <li>Infants Boys</li>
+                <li>Winterwear</li>
+                <li>Add ons</li>
+                <li>The Teen Shop</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><b>Shoes & Bags</b></li>
+                <li>Women</li>
+                <li>Men</li>
+                <li>Girls</li>
+                <li>Boys</li>
+                <li>Women Accessories</li>
+                <li>Men Accessories</li>
+                <li>Essential</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><b>Beauty</b></li>
+                <li>Makeup Eyes</li>
+                <li>Makeup Face</li>
+                <li>Makeup Lips</li>
+                <li>Makeup Nails</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><b>Explore</b></li>
+                <li>Online Offers</li>
+                <li>Store Offers</li>
+                <li>Online Gift Card</li>
+                <li>Store Gift Card</li>
+                <li>Store Nearsby</li>
+                <li>EDGE Membership</li>
+                <li>Shop on WhatsApp</li>
+                <li>Fashion VLOG</li>
+                <li>Join CIRCLEMAG</li>
+                <li>SBI Offers</li>
+                <li>Homecentre</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><b>About</b></li>
+                <li>About Us</li>
+                <li>Carrers</li>
+                <li>Take a Tour</li>
+                <li>Blog</li>
+                <li>Store Locator</li>
+                <li>Landmark Cares</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><b>Help</b></li>
+                <li>Contact us</li>
+                <li>Shipping</li>
+                <li>Returns Process</li>
+                <li>Returns Policy</li>
+                <li>Help Centre</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="call">
+        <div class="call_flex">
+            <div class="call_child"><i class="material-icons">call</i></div>
+            <div>
+                <div>Talk To Us</div>
+                <div>1800-123-1500</div>
+            </div>
+        </div>
+        <div class="call_flex">
+            <div class="call_child"><i class="material-icons">contact_support</i></div>
+            <div>
+                <div>Help Center</div>
+                <div>help.lifestylestores.com</div>
+            </div>
+        </div>
+        <div class="call_flex">
+            <div class="call_child"><i class="material-icons">email</i></div>
+            <div>
+                <div>Write To Us</div>
+                <div>help@lifestylestores.com</div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="footerfinal">
+        <img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="">
+        <div>
+            <p>© 2022 RNA Intellectual Property Limited.</p>
+            <p>Terms & Conditions - Privacy Policy</p>
+        </div>
+    </div>
+    <hr>
+</body>
+</html>

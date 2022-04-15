@@ -1,3 +1,6 @@
+*{
+    box-sizing: inherit;
+}
 #name{
     font-size: 18px;
     font-weight: 500;
@@ -9,7 +12,7 @@
 #cartContainer{
     display: flex;
     width: 100%;
-    /* border: 1px solid; */
+    
 }
 
 body{
@@ -20,37 +23,73 @@ body{
 #cartContainer>div{
     padding: 16px;
 }
-#image>img{
-   
-    padding: 5px;
+#image{
+    width: 100%; 
 }
-#image>img{
-    width: 350px;
+#image+div{
+    
+    width: 30%;
+}
+#image{
+   
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: fit-content;
+    
+}
+#image>div>img{
+    transition: all 0.3s;
+    
+}
+#image>div{
+    padding: 5px;
+    width: 332px;
+    
+    overflow: hidden;
+    /* align-items: flex-start; */
+}
+#image>div>img:hover{
+    transform: scale(1.8)
 }
 #price{
     display: inline;
-    font-size: 27px;
+    font-size: 30px;
     font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
     color: red;
+}
+
+#image>div:nth-child(2)>img{
+    transform: rotateY(180deg); 
+}
+#image>div:nth-child(3)>img{
+    width: 350px;
+    transform: scale(1.7); 
 }
 
 #tax{
     color: #b1b1b1;
     margin-top: -1px;
-    font-size: 14px;
+    font-size: 15px;
     font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
 
 }
 #tax+p{
     color: #FAA619;
     text-decoration: underline;
-    font-size: 14px;
-    margin-top: -7px;
+    font-size: 15px;
+    margin: 9px 0px 26px ;
     font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
 
 }
 #tax+p:hover{
    cursor: pointer;
+}
+
+#tax+p+p{
+    font-size: 17px;
+    margin: 9px 0px 26px ;
 }
 
 #size{
@@ -59,14 +98,256 @@ body{
 }
 #size>div{
     margin: 4px;
-    border: 1.5px solid rgb(196, 206, 223);
+    border: 1.8px solid rgb(196, 206, 223);
+    border-radius: 2px;
     font-size: 16px;
-    width: 50px;
+    width: 65px;
     /* height: 50px; */
     /* padding-top: 50%; */
-    padding: 14px 0px 14px 0px;
+    padding: 16px 0px 16px 0px;
     text-align: center;
 }
 #size>div:hover{
    cursor: pointer;
 }
+#size>div:hover{
+   color: #FAA619;
+   border: 1.8px solid #FAA619;
+}
+
+#addBasket{
+    margin: 21px 2px;
+    padding: 15px;
+    width: 100%;
+    
+    background-color: #FAA619;
+    border: 1px solid #FAA619;
+    border-radius: 2px;
+    color: white;
+    font-weight: 550;
+    font-size: 18px;
+    font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
+
+}
+#addBasket:hover{
+    cursor: pointer;
+}
+#line{
+    border: 0.1x solid rgb(240, 236, 236);
+    margin: 27px 0px;
+    width: 100%;
+    border: 0.1px solid;
+    
+}
+#offer{
+    display: inline;
+    font-size: 15px;
+    border: 1px solid rgb(245, 233, 233);;
+    padding: 5px 7px;
+    border-radius: 2px;
+    
+    color: red;
+    background-color: rgb(245, 233, 233);
+}
+#offer+p{
+    margin-top: 19px;
+    font-size: 15px;
+    font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
+    color:#595858;
+}
+
+.paymentHead,#Overview{
+    font-size: 15px;
+    margin-top: 20px;
+    
+}
+.paymentHead+p,#Overview~p{
+    font-weight: 100;
+    color:#595858;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
+}
+#Overview{
+    margin-bottom: 10px;
+}
+
+.paymentHead+input{
+    margin-top: 10px;
+    padding: 12px 85px 12px 19px;
+    border: 1.8px solid rgb(196, 206, 223);
+}
+.paymentHead+input+button{
+    margin-top: 10px;
+    padding: 12px 14px;
+    border: 1.8px solid rgb(196, 206, 223);
+    background-color: #FAA619;
+    border: 1px solid #FAA619;
+    border-radius: 2px;
+    color: white;
+}
+
+#costomerView>div{
+    display: flex;
+    
+
+}
+#costomerView>h1{
+    font-size: 39px;
+    font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
+    font-weight: 100;
+    padding: 78px 0px 15px 8px;
+}
+#costomerView>div>div{
+ padding: 8px;
+
+}
+#costomerView>div>div>img{
+    width: 100%;
+
+}
+#costomerView>div>div>h5{
+    font-size: 16px;
+    font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
+
+}
+#costomerView>div>div>p{
+    font-size: 15px;
+    font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
+    font-weight: 100;
+    color:#595858;
+    margin-top: 5px;
+}
+
+#costomerView+hr{
+    margin: 90px ;
+}
+
+
+@media screen and (max-width: 1100px) {
+    
+body{
+    padding: 0px ;
+}
+#name{
+    
+    padding: 21px;
+    margin-bottom: -20px;
+}
+
+    #price{
+    
+    font-size: 27px;
+}
+
+    
+#tax{
+ 
+    font-size: 13px;
+    font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
+
+}
+#tax+p{
+   
+    font-size: 14px;
+    margin: 9px 0px 22px ;
+}
+
+
+#size>div{
+    padding: 13px 0px 13px 0px;
+}
+
+#addBasket{ 
+    padding: 13px;
+    width: 100%;
+}
+
+#offer{
+    font-size: 14px;
+  
+}
+#offer+p{
+    margin-top: 19px;
+    font-size: 14px;
+    font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
+    color:#595858;
+}
+
+#image{
+    margin-left: 90px;
+    
+}
+#image+div{
+    width: 50%;
+}
+
+
+#image>div>img{
+    width: 200px;
+}
+
+#image>div{
+   justify-content: center;
+    width: 200px;
+   
+}
+
+#image>div:nth-child(3)>img{
+    width: 200px;
+    transform: scale(1.7); 
+}
+
+#costomerView>div>div>h5{
+    font-size: 16px;
+
+}
+#costomerView>div>div>p{
+    font-size: 15px;
+   
+}
+#costomerView>h1{
+    font-size: 29px;
+
+    padding: 78px 0px 1px 8px;
+}
+#costomerView
+{
+    margin: 5px;
+}
+#costomerView+hr{
+    margin: 40px ;
+}
+}
+  @media screen and (max-width: 600px) {
+    #image{
+        margin-left: 0px;
+        
+    }
+#image>div>img{
+    width: 250px;
+}
+#costomerView>div>div>h5{
+    font-size: 14px;
+
+}
+#costomerView>div>div>p{
+    font-size: 11px;
+   
+}
+#costomerView>h1{
+    font-size: 23px;
+
+    padding: 78px 0px 1px 8px;
+}
+
+#offer+p{
+    margin-top: 19px;
+    font-size: 12px;
+    font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji";
+    color:#595858;
+}
+
+}
+  
+  

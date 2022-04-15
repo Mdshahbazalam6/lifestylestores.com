@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="./checkout.css">
+<link rel="stylesheet" href="./footer.css">
 <body>
     <h1 id="name"></h1>
     <div id="cartContainer">
@@ -33,22 +35,272 @@
                 Add To Basket
             </button>
             <p> 💛 Add to Favoutites</p>
+            <hr id="line">
+            <div id="offer">
+                PROMOTION OFFER
+            </div>
+
+            <p>LAST DAY to SAVE an EXTRA 15% OFF on all orders of Rs 2,999 & above. Use Code SALE15 | Get 10% OFF on orders of Rs 1,999 & above. Use Code: SALE10 Browse promotion</p>
+            
+            <hr id="line">
+            <h5 class="paymentHead">Click & Collect</h5>
+            <p>Order this product now and collect it from a store of your choice. </p>
+            
+            <h5 class="paymentHead">Pay in installments</h5>
+            <p>Pay in easy installments on orders of ₹ 3,000 or more. Available for select banks. </p>
+            
+            <h5 class="paymentHead">When will I receive my order?</h5>
+            <input type="number" placeholder="Enter your Pincode">
+            <button>Check</button>
+            <hr id="line">
+            <h5 id="Overview">Overview</h5>
+            <p>This stylish polo t-shirt is designed with bold stripes, short sleeves and a button closure.</p>
+            <p>● Type : Polo Neck</p>
+            <p>● Design : Solid</p>
+            <p>● Length : Regular</p>
+            <p>● Sleeve Length : Half Sleeves</p>
+            <p>● Fabric : Cotton</p>
+            <p>● Fit : Regular</p>
+            <p>● Care Instructions : Machine Wash</p>
+            <p>● Model Wears : Size M, has Height 6'0" and Chest 38"</p>
+            <p>● Occasion : Casual</p>
+            <p>● Product : T-shirt</p>
+            <p>● Country of Origin : India</p>
+            <p>● Manufactured By : Arvind Lifestyle Brands Limited</p>
+            <p>● Net Quantity : 1</p>
         </div>
     </div>
+
+    <div id="costomerView">
+        <h1>Customers Also Viewed</h1>
+        <div>
+            <div>
+                <img src="https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/Beckham-Black-Black-1000003426336VAR2_01-345.jpg" alt="">
+                <h5>₹ 699</h5>
+                <p>KAPPA Men Solid Polo T-Shirt
+                </p>
+
+            </div>
+            <div>
+                <img src="https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000003426336-BECKHAM-Green-LIGHT-GREEN-1000003426336-Var2_01-345.jpg" alt="">
+                <h5>₹ 1051</h5>
+                <p>KAPPA Solid Polo Neck T-Shirt
+                </p>
+
+            </div>
+            <div>
+                <img src="https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/BeckhamVAR1-Grey-Charcoal-Melange-1000003426336VAR1_01-345.jpg" alt="">
+                <h5>₹ 900</h5>
+                <p>KAPPA Solid Polo Neck Half Sleeves T-shirt
+                </p>
+
+            </div>
+            <div>
+                <img src="https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000004571639-CORE-POLO-CORAL-Pink-CORAL-1000004571639_01-345.jpg" alt="">
+                <h5>₹ 600</h5>
+                <p>FAME FOREVER Solid Polo Neck T-Shirt
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div id="footer"></div>
+
+    
 </body>
 
 <script>
     var cartItem=JSON.parse(localStorage.getItem("cartItem"))
-    
+    var div1=document.createElement("div")
     var img1=document.createElement("img");
-    var img2=document.createElement("img");
-    
     img1.setAttribute("src",cartItem.image)
+    div1.append(img1)
+    
+    var div2=document.createElement("div")
+    var img2=document.createElement("img");
     img2.setAttribute("src",cartItem.image)
-    document.querySelector("#image").append(img1,img2)
+    div2.append(img2)
+
+    var div3=document.createElement("div")
+    var img3=document.createElement("img");
+    img3.setAttribute("src",cartItem.image)
+     div3.append(img3)
+
+
+
+    document.querySelector("#image").append(div1,div2,div3)
 
     document.querySelector("#name").innerHTML=cartItem.name;
     document.querySelector("#price").innerHTML="₹"+cartItem.price;
+
+    var cartProducts=JSON.parse(localStorage.getItem("cartProducts")) || [];
+
+    document.querySelector("#addBasket").addEventListener("click",function(){
+        cartProducts.push(cartItem);
+        localStorage.setItem("cartProducts",JSON.stringify(cartProducts))
+    })
+    
+    document.querySelector("#footer").innerHTML=`<div class="footer_first">
+<div class="footer_first_left">
+    <h1>Subscribe to our awesome emails.</h1>
+    <h6>Get our latest offers and news straight in your box. </h6>
+    <input type="text" placeholder="Please Enter an email adress">
+    <button>Subscribe</button>
+</div>
+<div class="footer_first_left">
+    <h1>Downloads Our apps.</h1>
+    <h6>Shop our products and offer on-the-go.</h6>
+    <div>
+        <a href="https://itunes.apple.com/in/app/id1180884618?ls=1&mt=8"><img
+                src="https://i.ibb.co/Q6fZS06/th-id-OIP.jpg" alt="th-id-OIP"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.applications.lifestyle"> <img
+                id="footer_first_left_img" src="https://i.ibb.co/6nXWjPx/th-id-OIP.jpg" alt="th-id-OIP"></a>
+    </div>
+</div>
+</div>
+
+<hr>
+<div class="footer_category">
+<div>
+    <ul>
+        <li><b>Tops</b></li>
+        <li>Ethnicwear</li>
+        <li>Bottoms</li>
+        <li>Dresses & Jumpsuits</li>
+        <li>Winterwear</li>
+        <li>Lingerie</li>
+        <li>Nightwear</li>
+        <li>Sportswear</li>
+        <li>Beauty</li>
+        <li>Watches & Sunglasses</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><b>Men</b></li>
+        <li>Tops</li>
+        <li>Bottoms</li>
+        <li>Ethnicwear</li>
+        <li>Winterwear</li>
+        <li>Sportswear</li>
+        <li>Innerwear</li>
+        <li>Grooming</li>
+        <li>Watches</li>
+        <li>Sunglasses</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><b>Kids</b></li>
+        <li>Girls Clothing</li>
+        <li>Boys Clothing</li>
+        <li>Infants Girls</li>
+        <li>Infants Boys</li>
+        <li>Winterwear</li>
+        <li>Add ons</li>
+        <li>The Teen Shop</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><b>Shoes & Bags</b></li>
+        <li>Women</li>
+        <li>Men</li>
+        <li>Girls</li>
+        <li>Boys</li>
+        <li>Women Accessories</li>
+        <li>Men Accessories</li>
+        <li>Essential</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><b>Beauty</b></li>
+        <li>Makeup Eyes</li>
+        <li>Makeup Face</li>
+        <li>Makeup Lips</li>
+        <li>Makeup Nails</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><b>Explore</b></li>
+        <li>Online Offers</li>
+        <li>Store Offers</li>
+        <li>Online Gift Card</li>
+        <li>Store Gift Card</li>
+        <li>Store Nearsby</li>
+        <li>EDGE Membership</li>
+        <li>Shop on WhatsApp</li>
+        <li>Fashion VLOG</li>
+        <li>Join CIRCLEMAG</li>
+        <li>SBI Offers</li>
+        <li>Homecentre</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><b>About</b></li>
+        <li>About Us</li>
+        <li>Carrers</li>
+        <li>Take a Tour</li>
+        <li>Blog</li>
+        <li>Store Locator</li>
+        <li>Landmark Cares</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><b>Help</b></li>
+        <li>Contact us</li>
+        <li>Shipping</li>
+        <li>Returns Process</li>
+        <li>Returns Policy</li>
+        <li>Help Centre</li>
+    </ul>
+</div>
+</div>
+
+<hr>
+
+
+<div class="call">
+<div class="call_flex">
+    <div class="call_child"><i class="material-icons">call</i></div>
+    <div>
+        <div>Talk To Us</div>
+        <div>1800-123-1500</div>
+    </div>
+</div>
+<div class="call_flex">
+    <div class="call_child"><i class="material-icons">contact_support</i></div>
+    <div>
+        <div>Help Center</div>
+        <div>help.lifestylestores.com</div>
+    </div>
+</div>
+<div class="call_flex">
+    <div class="call_child"><i class="material-icons">email</i></div>
+    <div>
+        <div>Write To Us</div>
+        <div>help@lifestylestores.com</div>
+    </div>
+</div>
+</div>
+
+<hr>
+<div class="footerfinal">
+<img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="">
+<div>
+    <p>© 2022 RNA Intellectual Property Limited.</p>
+    <p>Terms & Conditions - Privacy Policy</p>
+</div>
+</div>
+<hr>`
+
     
 </script>
+
 </html>
