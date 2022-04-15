@@ -1,0 +1,342 @@
+#hrtag{
+    border-top: 1px solid gainsboro;
+    margin: 9px 2px;
+    padding:10px;
+   }
+   #close{
+     font-weight: 100;
+     position: absolute;
+     top:10px;
+     right: 10px;
+     border: none;
+     font-weight: bold;
+     font-size: 20px;
+     background-color: white;
+   }
+       #signUp{
+        display: none;
+         border: 1px solid gainsboro;
+         width:51.7%;
+         height: 62.2%;
+         background-color: white;
+         position: fixed;
+         top:20%;
+         left: 24.2%;
+         font-family:Arial,sans-serif;
+       }
+       #continue{
+         border: orange;
+         background-color:rgb(251,166,27);
+         width: 195px;
+         padding: 20px 0px;
+         color: white;
+         font-weight: 600;
+         position: relative;
+         left: 57%;
+         
+       }
+      
+       #signUp a{
+         color: orange;
+       }
+       #signUp > div{
+         display: flex;
+         flex-direction: column;
+         margin: 7.5% 17%;
+        
+   
+       }
+       #signUp label{
+         font-weight: 600;
+         font-size: small;
+       }
+       #signUp input{
+         width: 91%;
+         padding:15px 18px;
+         margin-top: 5px;
+         margin-bottom: 6px;
+         border: 1px solid gainsboro;
+       }
+       #signUp h1{
+         font-weight: lighter;
+         line-height: 2px;
+         margin-top: 30px;
+       }
+       #com{
+         color:gray
+       }
+       #signUp p{
+         font-size: 13.5px;
+         font-weight: 500;
+         
+       }
+       #signupbtn{
+       position: sticky;
+       top: 10px;
+         left: 50px;
+   
+       right: 50px;
+       }
+   
+   
+#com{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+   #com+label{
+     font-size: 15px;
+     margin-top: 7px;
+     margin-bottom: 7px;
+   }
+#mobile+p{
+  margin: 5px;
+}
+   
+   
+   
+   
+     #Sotp{
+       display: none;
+       border: 1px solid gainsboro;
+         width:51.7%;
+         height: 59.2%;
+         background-color: white;
+         position: fixed;
+         top:18%;
+         left: 24.2%;
+         font-family:Arial,sans-serif;
+     }
+     #Sotp > div{
+       display: flex;
+         flex-direction: column;
+         margin: 6% 17%;  
+     }
+   
+     #Sotp p{
+       color: grey;
+       font-size: 13.5px;
+         font-weight: 500;
+         /* margin-top: 5px; */
+     }
+    
+     #Sotp a{
+       color:orange
+     }
+     #Sotp label{
+       font-size:larger;
+     }
+     #Sotp h1{
+         font-weight: lighter;
+         line-height: 2px;
+         margin-top: 27px;
+       }
+       #otp{
+         font-size: 150%;
+         padding: 0% 5%;
+         width:60%;
+         
+         height:40px;
+         border: 1px solid gainsboro;
+         margin:5px 0px;
+        
+       }
+       #Sotp p:nth-last-child(1){
+         margin-top: 23px;
+       }
+       #otpcontinue{
+         border: orange;
+         background-color:rgb(251,166,27);
+         width: 195px;
+         padding: 17px 0px;
+         color: white;
+         font-weight: 600;
+         position: relative;
+         left: 57%;
+         
+       }
+       #otphrtag{
+    border-top: 1px solid gainsboro;
+    margin: 4px 25px;
+    padding:9px;
+    margin-top: 20px;
+   }
+      
+   
+   
+   #Semail{
+     display: none;
+     border: 1px solid gainsboro;
+       width:51.7%;
+       height: 61.2%;
+       background-color: white;
+       position: fixed;
+       top:18%;
+       left: 24.2%;
+       font-family:Arial,sans-serif;
+   }
+   #Semail h1{
+     font-weight: lighter;
+         line-height: 2px;
+   }
+   #Semail p{
+     color: grey;
+       font-size: 13.5px;
+         font-weight: 500;
+         line-height: 21px;
+   }
+   #Semail input{
+     width: 91%;
+         padding:17px 18px;
+         margin-top: 8px;
+         margin-bottom: 6px;
+         border: 1px solid gainsboro;
+       
+   }
+   #proceed{
+     border: orange;
+         background-color:rgb(251,166,27);
+         width: 215px;
+         padding: 21px 0px;
+         color: white;
+         font-weight: 600;
+         margin-top: 20px;
+         position: relative;
+         
+         left: 53%;
+        
+         
+   }
+   
+   
+   #Semail > div{
+     display: flex;
+       flex-direction: column;
+       margin: 7.5% 17%;
+   }
+   
+   #skip{
+   color:grey;
+   
+     position: absolute;
+     top:20px;
+     right: 10px;
+     border: none;
+     font-weight: 100;
+     font-size: 18px;
+     background-color: white;
+   }
+   
+   
+   
+   #Saddress{
+   
+        display: none;
+         border: 1px solid gainsboro;
+         width:51.7%;
+         height: 61.2%;
+         background-color: white;
+         position: fixed;
+         top:18%;
+         left: 24.2%;
+         font-family:Arial,sans-serif; 
+   }
+   
+   #Saddress a{
+         color: orange;
+       }
+       #Saddress > div{
+         display: flex;
+         flex-direction: column;
+         margin: 7.5% 17%;
+        
+   
+       }
+       #Saddress h1{
+         font-weight: lighter;
+         line-height: 2px;
+       }
+       #saddress > div> div{
+         justify-content: space-between;
+       }
+       #Saddress input{
+         width: 40%;
+         padding:15px 18px;
+         margin-top: 5px;
+         margin-bottom: 6px;
+         border: 1px solid gainsboro;
+       }
+       #Saddress label{
+         font-size:10px;
+       }
+       #Saddress p{
+         font-size: 13.5px;
+         font-weight: 500;
+         color: grey;
+         
+       }
+       #ahrtag{
+    border-top: 1px solid gainsboro;
+    margin: 3px 25px;
+    
+   
+   }
+   #goback,#addressproceed{
+     border: orange;
+         background-color:rgb(251,166,27);
+         width: 215px;
+         padding: 21px 0px;
+         color: white;
+         font-weight: 600;
+         margin-top: 20px;
+         margin-right: 10px;
+         position: relative;
+   
+         
+         left: 2%;
+   
+   }
+   #Sadcheck{
+     
+     display: flex;
+     
+     margin-top: 18px;
+   }
+   #Sadcheck p{
+     color: black;
+   }
+   #Sadcheck label{
+   font-size: 10px;
+   
+   }
+   
+   #Sadcheck input{
+     width: 30px;
+   }
+   #Sadcheck > div:nth-child(1){
+     padding:2% 0%;
+     width: 10%;
+   }
+   #Sadcheck > div:nth-child(2){
+     width: 50%;
+    
+   }
+   
+   
+   /* #alert,#alert4{
+     display: none;
+     color:red;
+     font-size: 11px;
+     text-align: end;
+   }
+   #alert1,#alert2,#alert3{
+     display: none;
+     color:red;
+     font-size: 11px;
+     text-align: end;
+   }
+   #alert5{
+     display: none;
+     color:red;
+     font-size: 11px;
+     text-align: center;
+   } */
