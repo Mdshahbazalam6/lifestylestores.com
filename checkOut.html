@@ -32,7 +32,7 @@
     </div>
     
 <div class="navbar">
-    <div><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="lifestyle"></div>
+    <div><a href="./header.html"><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="lifestyle"></a></div>
     <div>
         <ul>
             
@@ -376,6 +376,7 @@
         alert("Product Successfully added!")
         var a=JSON.parse(localStorage.getItem("cartProducts"))
         document.getElementById("cart").innerText=a.length
+        window.location.href="basket.html"
     })
     
     document.querySelector("#footer").innerHTML=`<div class="footer_first">
