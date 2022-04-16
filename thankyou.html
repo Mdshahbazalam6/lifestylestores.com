@@ -321,8 +321,8 @@ document.querySelector("#footer").innerHTML=`<div class="footer_first">
 <div class="footer_first_left">
     <h1>Subscribe to our awesome emails.</h1>
     <h6>Get our latest offers and news straight in your box. </h6>
-    <input type="text" placeholder="Please Enter an email adress">
-    <button>Subscribe</button>
+    <input type="text" id="email" placeholder="Please Enter an email adress">
+    <button onclick="submit_email()" >Subscribe</button>
 </div>
 <div class="footer_first_left">
     <h1>Downloads Our apps.</h1>
@@ -476,4 +476,24 @@ document.querySelector("#footer").innerHTML=`<div class="footer_first">
 <hr>`
 
 </script>
+
+
+
+<script>
+    const submit_email=()=>{
+    var email=document.getElementById("email").value
+    console.log(email)
+    var local=localStorage.getItem("subscribers_through_Emails")
+    if(local === null ){
+        localStorage.setItem("subscribers_through_Emails",'[]')
+    }
+    var arr=JSON.parse(localStorage.getItem("subscribers_through_Emails"))
+    arr.push(email)
+    localStorage.setItem("subscribers_through_Emails",JSON.stringify(arr))
+    alert(`Thank You for Subscribing Us`)
+    document.getElementById("email").value=``
+}
+</script>
 </html>
+
+
