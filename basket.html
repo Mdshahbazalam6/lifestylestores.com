@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin:0%;
+        padding:0%;
+    }
+    #basket{
+        display: flex;
+        justify-content: space-between;
+        
+        padding: 5%;
+        margin: 0%;
+        font-family: arial;
+    }
+  
+    #bmain{
+        width: 67%;
+      
+    }
+    #bmain3{
+        width:27%
+    }
+    #bhead{
+        display: flex;
+        justify-content: space-between;
+        padding:1% 1%;
+        border-top: 1px solid gainsboro;
+        border-bottom: 1px solid gainsboro;
+        font-size: 2.3vh;
+    }
+    #bhead>div:nth-child(2){
+        width:25%
+    }
+    #bhead>div:nth-child(1){
+        width:20%
+    }
+    #items{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+    }
+    #mainbox{
+        display: flex;
+        justify-content: space-between;
+        padding:1vh;
+     border: 1px solid gainsboro;
+        height: 25vh;
+        margin-bottom: 2vh;
+    }
+ 
+    #box1{
+      width:25vh;
+    }
+    #box2{
+        width: 41%;
+        padding:0vh 2vh; 
+        line-height: 3vh;
+    }
+    #box2 button,p{
+        border:none;
+        background-color: white;
+line-height: 2vh;
+color:grey
+    }
+    #box3 p{
+        color:black;
+        font-size: 2.3vh;
+    }
+    #box2 p{
+color:black;
+font-size: 2.2vh;
+    }
+    #pic{
+        width:25vh;
+        height: 25vh;
+    }
+    #box3{
+        width: 39%;
+        display: flex;
+        justify-content: space-between;
+        padding:0vh 1vh; 
+    }
+    #box3 select{
+        width:10vh;
+        height: 6vh;
+        padding:0vh 1vh; 
+    }
+    #blogo{
+        width:15vh;
+        margin:1vh
+    }
+#bmain2{
+    padding:1vh;
+    border:1px solid gainsboro;
+    height: fit-content;
+}
+
+#bmain2 > div:nth-child(4){
+    border-bottom:1px solid gainsboro ;
+    border-top:1px solid gainsboro ;
+
+}
+#bmain2 > div p:nth-child(1){
+    font-size: 2.5vh;
+}
+
+
+
+    #bmain2 > div{
+        display: flex;
+        justify-content: space-between;
+    }
+    #bmain2 p{
+        color:black
+    }
+    #bcheckout button{
+        width:100%;
+        padding:2vh 0vh;
+        font-weight: bold;
+        font-size: 3vh;
+        color:white;
+        background-color: orange;
+        border-radius: 0.5vh;
+        border: none;
+    }
+    #bcheckout{
+     margin-top: 1vh;
+        border-bottom: 1px solid gainsboro;
+    }
+    #promoCode,#giftcard{
+        border: 1px solid gainsboro;
+        font-size: 2vh;
+        margin:2vh  0vh;
+        padding: 1vh;
+    }
+    #promoCode img{
+        width:4vh;
+    }
+    #giftcard img{
+        width:4.5vh;
+    }
+    #hide{
+        display: none;
+        
+        border-top: 1px solid gainsboro;
+        border-bottom: 1px solid gainsboro;
+        padding:2vh 0vh;
+       
+    }
+    #hide button{
+        background-color: white;
+        color:orange;
+        border: none;
+    }
+    #hide input{
+        border: none;
+        padding: 1vh;
+    }
+    #paymentimg{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #paymentimg>img{
+            height: auto;
+            width: 50px;
+            gap:20px;
+            margin: 5px;
+        }
+ 
+</style>
+<body>
+    <div id="basket">
+        <div id="bmain">
+            <div id="bhead">
+                <div>Item</div>
+                <div>Description</div>
+                <div>Price</div>
+                <div>Quantity</div>
+                <div>Total Price</div>
+            </div>
+            <div>
+                <img id="blogo" src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg"/>
+            </div>
+
+
+            <div id="items">
+                
+
+            </div>
+            <div id="paymentimg">
+                <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-visa.png" alt="">
+                <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-mc.png" alt="">
+                <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rupay.svg" alt="">
+                <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png" alt="">
+                <img src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg" alt="">
+                <img src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg" alt="">
+                <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rewards.svg" alt="">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+     
+        <div id="bmain3">
+               <div id="bmain2">
+            <div>
+                <p>Subtotal:</p>
+                <p id="h3"></p>
+            </div>
+            <div>
+                <p>Standard Ground Shipping</p>
+                <p style="color:rgb(8, 236, 8); " >Free</p>
+            </div>
+            <div>
+                <p>Offer Savings</p>
+                <p  style="color:rgb(8, 236, 8); " id="offer"></p>
+            </div>
+            <div>
+                <h3>TOTAL</h3>
+                <h3 id="total"></h3>
+            </div>
+            <div id="bcheckout">
+                <button><a style="text-decoration:none; color:white" href="address.html">Proceed to Checkout</a></button>
+            </div>
+           
+        </div>
+        <div id="promoCode" onclick="address()">
+            <p><img src="https://i1.lmsin.net/website_images/common/images/basket/ico-gift.png" alt="">
+                Got a Promo/Voucher Code?         
+            </p>
+            <div id="hide">
+                <input  id="promoinput" type="text" placeholder="Enter Promo Code"/>
+                <button onclick="Apply()">Apply</button>
+                <button onclick="Cancel()">Cancel</button>
+            </div>
+        </div>
+                <div id="giftcard">
+            <p><img src="https://i1.lmsin.net/website_images/in/giftcards/gift-card-icon.svg" alt="">
+                Have a Gift Card? Redeem it at checkout.
+            </p>
+            
+        </div>
+        <div></div>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+<script>
+    
+    
+var cartProducts=JSON.parse(localStorage.getItem("cartProducts"))
+
+var sum=0
+
+// var totalsum= cartProducts.reduce(function(sum,elem, index, arr){
+//   return  sum+=Number(elem.price);
+
+// },0)
+
+
+
+ 
+cartProducts.forEach(function(element,Index) {
+    var mainbox =document.createElement("div");
+    mainbox.setAttribute("id","mainbox")
+    var box1 =document.createElement("div");
+    box1.setAttribute("id","box1")
+
+    var box2 =document.createElement("div");
+    box2.setAttribute("id","box2")
+
+    var box3 =document.createElement("div");
+    box3.setAttribute("id","box3")
+
+    var img=document.createElement("img");
+    img.setAttribute("id","pic")
+    img.src=element.image;
+
+    var name = document.createElement("h5")
+    name.innerText=element.name;
+
+    var color = document.createElement("p")
+    color.innerText="Colour:Multicolor"
+
+    var size = document.createElement("p")
+    size.innerText="Size:M"
+
+    var price= document.createElement("p");
+    price.innerText="₹" +" "+ element.price;
+
+    var quantity = document.createElement("select")
+    var opt1 = document.createElement("option")
+    opt1.innerText="1"
+    opt1.value=1
+    var opt2 = document.createElement("option")
+    opt2.innerText="2"
+    opt2.value=2
+    var opt3 = document.createElement("option")
+    opt3.innerText="3"
+    opt3.value=3
+    var opt4 = document.createElement("option")
+    opt4.innerText="4"
+    opt4.value=4
+    var opt5 = document.createElement("option")
+    opt5.innerText="5"
+    opt5.value=5
+    var opt6 = document.createElement("option")
+    opt6.innerText="6"
+    opt6.value=6
+    var opt7 = document.createElement("option")
+    opt7.innerText="7"
+    opt7.value=7
+    var opt8 = document.createElement("option")
+    opt8.innerText="8"
+    opt8.value=8
+    quantity.append(opt1,opt2,opt3,opt4,opt5,opt6,opt7,opt8)
+  
+    var totalPrice= document.createElement("p");
+    totalPrice.innerText="₹" +" "+ element.price
+    sum+= element.price
+   quantity.onchange=function(){
+    totalPrice.innerText="₹" +" "+ element.price*quantity.value;
+sum-=element.price
+sum+=element.price*quantity.value;
+console.log(sum)
+document.querySelector("#h3").innerText="₹"+ " "+sum;
+
+document.querySelector("#offer").innerText="-₹" +" "+Math.floor(sum*0.3)
+document.querySelector("#total").innerText="₹" +" "+Math.floor(sum*0.7)
+localStorage.setItem("subtotal",sum)
+
+   }
+
+   var button=document.createElement("button");
+        button.textContent="Remove"
+
+        button.addEventListener("click", function remove(){
+            cartProducts.splice(Index, 1);
+            localStorage.setItem("cartProducts",JSON.stringify(cartProducts))
+            window.location.reload()
+        })
+  
+     box1.append(img)
+     box2.append(name,color,size,button);
+     box3.append(price, quantity,totalPrice)
+     mainbox.append(box1,box2,box3);
+     document.querySelector("#items").append(mainbox)
+
+});
+document.querySelector("#h3").innerText="₹"+ " "+sum;
+localStorage.setItem("subtotal",sum)
+
+document.querySelector("#total").innerText="₹" +" "+Math.floor(sum)
+function Apply(){
+    if(document.querySelector("#promoinput").value=="masai30"){
+        document.querySelector("#offer").innerText="-₹" +" "+Math.floor(sum*0.3)
+document.querySelector("#total").innerText="₹" +" "+Math.floor(sum*0.7)
+document.querySelector("#hide").style.display="none"
+    }else {
+        document.querySelector("#offer").innerText="-₹" +" "+Math.floor(sum)
+document.querySelector("#total").innerText="₹" +" "+Math.floor(sum)
+    }
+}
+
+
+
+
+
+function address(){
+    document.querySelector("#hide").style.display="block"
+}
+// function Cancel(){
+//     if( document.querySelector("#hide").style.display!="none"){
+//         document.querySelector("#hide").style.display="none"
+//     }
+   
+// }
+
+
+
+</script>

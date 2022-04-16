@@ -369,7 +369,7 @@
                 <hr>
                 <div id="subtotal">
                     <h4>Total</h4>
-                    <h4 id="h3"></h4>
+                    <h4 id="h4"></h4>
                 </div>
                 <hr>
             </div>
@@ -402,19 +402,20 @@
 
 
     
-var cartData=JSON.parse(localStorage.getItem("cartProducts"))
+var cartProducts=JSON.parse(localStorage.getItem("cartProducts"))
 
 
-console.log(cartData)
 
-var totalsum= cartData.reduce(function(sum,elem, index, arr){
-  return  sum+=Number(elem.price);
 
-},0)
+// var totalsum= cartProducts.reduce(function(sum,elem, index, arr){
+//   return  sum+=Number(elem.price);
 
+// },0)
+var totalsum=localStorage.getItem("subtotal")
 document.querySelector("#h3").innerText="₹"+ " "+totalsum;
+document.querySelector("#h4").innerText="₹"+ " "+Math.floor(totalsum*0.7);
  
-cartData.forEach(function(element,Index) {
+cartProducts.forEach(function(element,Index) {
     var mainbox =document.createElement("div");
     mainbox.setAttribute("id","mainbox")
     var box1 =document.createElement("div");
