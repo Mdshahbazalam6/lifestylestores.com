@@ -31,6 +31,7 @@
     #pmain{
         padding:1.5% 5%;
         display: flex;
+        margin-bottom: 20vh;
     
     }
 
@@ -40,6 +41,9 @@
     }
     #psummary{
         width: 33%;
+        position: sticky;
+        top:0%;
+        height: fit-content;
     }
     #address > div{
         display: flex;
@@ -764,14 +768,9 @@ margin: 0%;
  
 }
 
-#notScroll{
-   
-    position: sticky;
-    top:-20px;
- 
-  
-}
 
+   
+ 
 #smain{
     padding-top: 2.8vh;
     display: grid;
@@ -845,12 +844,11 @@ margin-bottom: 1.5vh;
 }
 
 #paymentimg{
-    position:sticky;
-    top:100%;
+   
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
 }
 #paymentimg>img{
     height: auto;
