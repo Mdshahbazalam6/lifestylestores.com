@@ -27,12 +27,9 @@
     <div class="first">
       <div>
           <ul>
-              <!-- <li>Free Shipping</li>
-              <li>Click & Collect</li>
-              <li>return to store</li> -->
-              <li><i class="material-icons" style="padding: 0%;border: none;">airport_shuttle</i> Free Shipping</li>
-              <li><i class="material-icons" style="padding: 0%;border: none;">apartment</i> Click & Collect</li>
-              <li><i class="material-icons" style="padding: 0%;border: none;">home</i> return to store</li>
+              <li><i class="material-icons" style="font-size: 1.5vw;border: none;padding: 0%;"  >airport_shuttle</i>Free Shipping</li>
+              <li><i class="material-icons" style="font-size: 1.5vw;border: none;padding: 0%;"  >apartment</i>Click & Collect</li>
+              <li><i class="material-icons" style="font-size: 1.5vw;border: none;padding: 0%;"  >storefront</i>return to store</li>
           </ul>
       </div>
       <div>
@@ -40,47 +37,36 @@
               <li>Download Our Apps |</li>
               <li>store Locator |</li>
               <li>Help</li>
-              <li style="position: fixed;top: 8vh;right: 21vh;">
-                  <div > <div id="signUpp">
-                      <button  onclick="demosign()" style="padding: 1.5vh;background-color: white;border: none;font-weight: 900; ">SignUp / Sign In</button>
-                  </div>
-                  
-                  
-                  
-                  <div  id="popup">
-                  
-                  </div>
-                  
-                  
-                  <div id="demomain">
-                    
-                  </div> 
-                </li>
+            
           </ul>
       </div>
   </div>
-
-  <div class="navbar">
-      
+  
+<div class="navbar">
+  <div><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="lifestyle"></div>
+  <div>
       <ul>
-          <li><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="lifestyle"></li>
+          
+      <ul>
+          <!-- <li><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="lifestyle"></li> -->
           <li><a href="">Women</a></li>
           <li class="active"><a href="">Men</a>
             <div class="submenue">
                 <ul>
-                  <li><a href="productPage.html">Top wear</a>
+                  <li>Top wear
                       <div class="in">
                           <div>
-                              <b><a href="productPage.html">Shop in Top Wear</a> </b>
+                              <b><a href="productPage.html"> Shop in Top Wear </a></b>
                               <hr style="width:10vw; margin-top: 2vh;margin-bottom: 2vh;margin-left: 0vw;">
-                              <p><a href="productPage.html">Casual Shirt</a></p>
-                              <p><a href="productPage.html">Formal Shirt</a></p>
-                              <p><a href="productPage.html">Polos</a></p>
-                              <p>T-Shirt</p>
-                              <p>Jackets</p>
-                              <p>Hoodies & Sweethearts</p>
+                              <p><a href="productPage.html"> Casual Shirt  </a></p>
+                              <p><a href="productPage.html"> Formal Shirt </a></p>
+                              <p><a href="productPage.html"> Polos </a></p>
+                              <p><a href="productPage.html"> T-Shirt </a></p>
+                              <p><a href="productPage.html"> Jackets </a></p>
+                              <p><a href="productPage.html"> Hoodies & Sweethearts </a></p>
                           </div>
                           <div>
+                           
                               <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg" alt="">
                           </div>
                           <div><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg" alt=""></div>
@@ -248,18 +234,32 @@
           </a></li>
           <li><a href="">Shoes & Bags</a></li>
           <li><a href="">Beauty</a></li>
-          <li><input type="text" placeholder="🔍 What are you looking for?"></li>
-          <li><a href="">Sign Up-Sign In</a></li>
-          <li><a href="">Basket</a></li>
       </ul>
-
-
+  </div>
+  <div><input type="text" placeholder="🔍 What are you looking for?"></div>
+  <div>
+      <!-- Sign Up-Sign In -->
+      <div id="signUpp">
+          <button  onclick="demosign()" style="border: none;">SignUp / Sign In</button>
+      </div>
+      
+      
+      
+      <div  id="popup">
+      
+      </div>
+      
+      
+      <div id="demomain"></div>
+  </div>
+  <div><i class="material-icons" style="font-size: 1.5vw;border: none;padding: 0%;"  >shopping_cart</i><span id="cart"></span> </div>
+</div>
    
 
 
-<div id="demomain">
+<!-- <div id="demomain">
       
-    </div> 
+    </div>  -->
     
     <h1 id="topName">Topwear</h1>
     <div id="topSection">
@@ -416,15 +416,15 @@
     <hr>
 <!-- footer -->
     <div  id="footer">
-    
-  
-
-
-  </div> 
+    </div> 
  
   </body>
 
 
   <script src="./productPage.js"></script>
  <script src="./signup.js"></script>
+ <script>
+  var a=JSON.parse(localStorage.getItem("cartProducts"))
+document.getElementById("cart").innerText=a.length
+ </script>
 </html>

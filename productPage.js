@@ -312,7 +312,10 @@ function showProducts(allProducts) {
 
     checkout.addEventListener("click",function(){
         cartProducts.push(item);
-        localStorage.setItem("cartProducts",JSON.stringify(cartProducts))
+        localStorage.setItem("cartProducts",JSON.stringify(cartProducts));
+        alert("Product Successfully added!")
+        var a=JSON.parse(localStorage.getItem("cartProducts"))
+document.getElementById("cart").innerText=a.length
     })
 
     img.addEventListener("click",function(){
@@ -395,6 +398,7 @@ searchData.forEach((item) => {
     showProducts(newData);
   });
 });
+
 
 document.querySelector("#footer").innerHTML=`<div class="footer_first">
 <div class="footer_first_left">

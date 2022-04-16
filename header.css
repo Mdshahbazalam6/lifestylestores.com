@@ -480,7 +480,7 @@ hr {
     top: 815vh;
     right: 3vw;
     /* display: block; */
-    background-color: black;
+    /* background-color: black; */
 }
 
 #deal_corner_footer button {
@@ -745,12 +745,18 @@ hr {
 .navbar {
     background-color: whitesmoke;
     text-align: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: sticky;
     top: 5vh;
-    z-index: 10;
-    font-weight: bolder;
+    z-index: 65;
 }
-
+/* .navbar > div{
+wi
+} */
 .navbar ul {
     /* display: inline-flex; */
     display: flex;
@@ -760,15 +766,15 @@ hr {
     position: sticky;
     top: 5vh;
     z-index: 10;
-    background-color: white;
 }
 
 .navbar ul li {
     margin: .5vw;
     margin-bottom: 0%;
+    padding-bottom: 2.2vh;
 }
 
-.navbar ul li input {
+.navbar input {
     width: 25vw;
     padding: 1vh;
     outline: none;
@@ -797,10 +803,9 @@ hr {
 .submenue {
     margin-top: 1vw;
     position: absolute;
-    top: 4.8vh;
-    left: 2vw;
-    width: 80vw;
-    padding: .7vh;
+    top: 9vh;
+    /* left: 2vw; */
+    width: 90vw;
     z-index: 8;
 }
 
@@ -811,6 +816,10 @@ hr {
 
 .navbar ul li>div {
     display: none;
+    position: absolute;
+    left: -6vw;
+    top: 3vh;
+    width: 85vw;
 }
 
 .navbar ul li:hover .submenue {
@@ -825,12 +834,13 @@ hr {
 
 .in {
     background-color: white;
-    width: 90vw;
+    width: 95vw;
     height: 50vh;
     border: 2px solid whitesmoke;
     position: absolute;
     left: 1vw;
     display: flex;
+    margin-top: 2vh;
 }
 
 
@@ -845,7 +855,7 @@ hr {
     /* border: 1px solid red ; */
     width: 15vw;
     height: 20vh;
-    margin-top: 2vh;
+    /* margin-top: 2vh; */
 }
 
 .in:first-child {
@@ -853,3 +863,5 @@ hr {
     text-align: left;
     padding-left: 1vw;
 }
+
+

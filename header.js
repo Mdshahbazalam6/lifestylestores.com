@@ -369,3 +369,6 @@ const submit_email=()=>{
     alert(`Thank You for Subscribing Us`)
     document.getElementById("email").value=``
 }
+
+var a=JSON.parse(localStorage.getItem("cartProducts"))
+document.getElementById("cart").innerText=a.length
