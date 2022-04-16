@@ -201,7 +201,7 @@
 
                     <div id="cvv">
                         <label>CVV</label>
-                         <input type="number" placeholder="CVV"/>
+                         <input type="password" placeholder="CVV"/>
                      </div>
                 </div>
 
@@ -373,6 +373,16 @@
                 </div>
                 <hr>
             </div>
+
+            <div id="paymentimg">
+                <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-visa.png" alt="">
+                <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-mc.png" alt="">
+                <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rupay.svg" alt="">
+                <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png" alt="">
+                <img src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg" alt="">
+                <img src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg" alt="">
+                <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rewards.svg" alt="">
+            </div>
           
             </div>
          
@@ -388,7 +398,7 @@
    function submits(){
     var data=document.querySelector("input").value;
        if(data!=""){
-        alert("login successfull")
+        alert("Payment successfull")
         window.location.href="thankyou.html"
        }else{
            alert("Please fill the details")
