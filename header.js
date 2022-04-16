@@ -7,102 +7,10 @@ var image1 = document.getElementById("img1")
 
     var a = 0;
 
-    // const rightSlide=()=>{
-    //     // if (a === 0) {
-    //     //     image1.style.transform = "translateX(0vw)"
-    //     //     image2.style.transform = "translateX(0vw)"
-    //     //     image3.style.transform = "translateX(0vw)"
-    //     //     image4.style.transform = "translateX(0vw)"
-    //     //     image5.style.transform = "translateX(0vw)"
-    //     //     a = 1
-    //     // }
-    //       if (a === 1){
-    //         image1.style.transform = "translateX(-80vw)"
-    //         image2.style.transform = "translateX(-80vw)"
-    //         image3.style.transform = "translateX(-80vw)"
-    //         image4.style.transform = "translateX(-80vw)"
-    //         image5.style.transform = "translateX(-80vw)"
-    //         a = 2
-    //     } else if (a === 2) {
-    //         image1.style.transform = "translateX(-160vw)"
-    //         image2.style.transform = "translateX(-160vw)"
-    //         image3.style.transform = "translateX(-160vw)"
-    //         image4.style.transform = "translateX(-160vw)"
-    //         image5.style.transform = "translateX(-160vw)"
-    //         a = 3
-    //     } else if (a === 3) {
-    //         image1.style.transform = "translateX(-240vw)"
-    //         image2.style.transform = "translateX(-240vw)"
-    //         image3.style.transform = "translateX(-240vw)"
-    //         image4.style.transform = "translateX(-240vw)"
-    //         image5.style.transform = "translateX(-240vw)"
-    //         a = 4
-    //     } else if (a === 4) {
-    //         image1.style.transform = "translateX(-320vw)"
-    //         image2.style.transform = "translateX(-320vw)"
-    //         image3.style.transform = "translateX(-320vw)"
-    //         image4.style.transform = "translateX(-320vw)"
-    //         image5.style.transform = "translateX(-320vw)"
-    //         a = 0
-    //     }
-    // console.log(a)
-    // }
-
-    const slide = () => {
-        if (a === 0) {
-            image1.style.transform = "translateX(0vw)"
-            image2.style.transform = "translateX(0vw)"
-            image3.style.transform = "translateX(0vw)"
-            image4.style.transform = "translateX(0vw)" 
-            image5.style.transform = "translateX(0vw)"
-            a = 1
-            // console.log(i)
-
-            setTimeout('slide()', 6000);
-        } else if (a === 1) {
-            image1.style.transform = "translateX(-80vw)"
-            image2.style.transform = "translateX(-80vw)"
-            image3.style.transform = "translateX(-80vw)"
-            image4.style.transform = "translateX(-80vw)"
-            image5.style.transform = "translateX(-80vw)"
-            a = 2
-
-            // console.log(i)
-            setTimeout('slide()', 6000);
-        } else if (a === 2) {
-            image1.style.transform = "translateX(-160vw)"
-            image2.style.transform = "translateX(-160vw)"
-            image3.style.transform = "translateX(-160vw)"
-            image4.style.transform = "translateX(-160vw)"
-            image5.style.transform = "translateX(-160vw)"
-            a = 3
-
-            // console.log(i)
-            setTimeout('slide()', 6000);
-        } else if (a === 3) {
-            image1.style.transform = "translateX(-240vw)"
-            image2.style.transform = "translateX(-240vw)"
-            image3.style.transform = "translateX(-240vw)"
-            image4.style.transform = "translateX(-240vw)"
-            image5.style.transform = "translateX(-240vw)"
-            a = 4
-            // console.log(i)
-
-            setTimeout('slide()', 6000);
-        } else if (a === 4) {
-            image1.style.transform = "translateX(-320vw)"
-            image2.style.transform = "translateX(-320vw)"
-            image3.style.transform = "translateX(-320vw)"
-            image4.style.transform = "translateX(-320vw)"
-            image5.style.transform = "translateX(-320vw)"
-            a = 0
-            // console.log(i)
-
-            setTimeout('slide()', 6000);
-        }
+    const rightSlide=()=>{
+        console.log(1)
     }
-
-    function back(){
+    const slide = () => {
         if (a === 0) {
             image1.style.transform = "translateX(0vw)"
             image2.style.transform = "translateX(0vw)"
@@ -110,6 +18,9 @@ var image1 = document.getElementById("img1")
             image4.style.transform = "translateX(0vw)"
             image5.style.transform = "translateX(0vw)"
             a = 1
+            // console.log(i)
+
+            setTimeout('slide()', 6000);
         } else if (a === 1) {
             image1.style.transform = "translateX(-80vw)"
             image2.style.transform = "translateX(-80vw)"
@@ -117,6 +28,9 @@ var image1 = document.getElementById("img1")
             image4.style.transform = "translateX(-80vw)"
             image5.style.transform = "translateX(-80vw)"
             a = 2
+
+            // console.log(i)
+            setTimeout('slide()', 6000);
         } else if (a === 2) {
             image1.style.transform = "translateX(-160vw)"
             image2.style.transform = "translateX(-160vw)"
@@ -124,6 +38,9 @@ var image1 = document.getElementById("img1")
             image4.style.transform = "translateX(-160vw)"
             image5.style.transform = "translateX(-160vw)"
             a = 3
+
+            // console.log(i)
+            setTimeout('slide()', 6000);
         } else if (a === 3) {
             image1.style.transform = "translateX(-240vw)"
             image2.style.transform = "translateX(-240vw)"
@@ -131,6 +48,9 @@ var image1 = document.getElementById("img1")
             image4.style.transform = "translateX(-240vw)"
             image5.style.transform = "translateX(-240vw)"
             a = 4
+            // console.log(i)
+
+            setTimeout('slide()', 6000);
         } else if (a === 4) {
             image1.style.transform = "translateX(-320vw)"
             image2.style.transform = "translateX(-320vw)"
@@ -138,10 +58,52 @@ var image1 = document.getElementById("img1")
             image4.style.transform = "translateX(-320vw)"
             image5.style.transform = "translateX(-320vw)"
             a = 0
+            // console.log(i)
+
+            setTimeout('slide()', 6000);
         }
     }
-
+    function back(){
+                if (a === 0) {
+                    image1.style.transform = "translateX(0vw)"
+                    image2.style.transform = "translateX(0vw)"
+                    image3.style.transform = "translateX(0vw)"
+                    image4.style.transform = "translateX(0vw)"
+                    image5.style.transform = "translateX(0vw)"
+                    a = 1
+                } else if (a === 1) {
+                    image1.style.transform = "translateX(-80vw)"
+                    image2.style.transform = "translateX(-80vw)"
+                    image3.style.transform = "translateX(-80vw)"
+                    image4.style.transform = "translateX(-80vw)"
+                    image5.style.transform = "translateX(-80vw)"
+                    a = 2
+                } else if (a === 2) {
+                    image1.style.transform = "translateX(-160vw)"
+                    image2.style.transform = "translateX(-160vw)"
+                    image3.style.transform = "translateX(-160vw)"
+                    image4.style.transform = "translateX(-160vw)"
+                    image5.style.transform = "translateX(-160vw)"
+                    a = 3
+                } else if (a === 3) {
+                    image1.style.transform = "translateX(-240vw)"
+                    image2.style.transform = "translateX(-240vw)"
+                    image3.style.transform = "translateX(-240vw)"
+                    image4.style.transform = "translateX(-240vw)"
+                    image5.style.transform = "translateX(-240vw)"
+                    a = 4
+                } else if (a === 4) {
+                    image1.style.transform = "translateX(-320vw)"
+                    image2.style.transform = "translateX(-320vw)"
+                    image3.style.transform = "translateX(-320vw)"
+                    image4.style.transform = "translateX(-320vw)"
+                    image5.style.transform = "translateX(-320vw)"
+                    a = 0
+                }
+            }
+        
     
+
     var im1 = ['https://i.ibb.co/G7gLQmZ/xl-c301-white-dennis-lingo-original-imaff64h5mca5ysw.jpg',
         "https://i.ibb.co/2txQq3R/m-mss21eppsh1015c-metronaut-original-imag8f6kkh84wdzh.jpg",
         "https://i.ibb.co/R69j1m7/m-pk19sh09g-surhi-original-imaft8vgvhmhbhsy.jpg",
@@ -319,26 +281,11 @@ deal_corner.forEach((ele)=>{
 
     let btn=document.createElement("button")
     btn.innerText=`Add To Cart`
-
-    btn.onclick=()=>{
-        store_in_local(ele)
-    }
     div.append(image,p,child_div,btn)
     deal_corner_footer.append(div)
 })
 
 var slide_left=document.getElementsByClassName("slide_left")
-
-const store_in_local = (ele)=>{
-    console.log(ele)
-    var local=localStorage.getItem("cartProducts")
-    if(local === null ){
-        localStorage.setItem("cartProducts",'[]')
-    }
-    var arr=JSON.parse(localStorage.getItem("cartProducts"))
-    arr.push(ele)
-    localStorage.setItem("cartProducts",JSON.stringify(arr))
-}
 
 const left =()=>{
     console.log(1)
@@ -355,6 +302,7 @@ const right=()=>{
     document.getElementById("sr").style.display=' none';
     document.getElementById("sl").style.display=' inline';
 }
+
 
 const submit_email=()=>{
     var email=document.getElementById("email").value
