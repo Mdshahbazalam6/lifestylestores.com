@@ -25,7 +25,7 @@ var signupobj={
  var signupData=JSON.parse(localStorage.getItem("signupData"))
  var signUp=document.querySelector("#signUp");
 var Sotp = document.querySelector("#Sotp");
-var Saddress=document.querySelector("#Saddress")
+var Saddress=document.querySelector("#Saddress");
 var Semail =document.querySelector("#Semail");
 // var otp=document.querySelector("#otp").value
 
@@ -68,8 +68,8 @@ else{
 function skip(){
 
 document.querySelector("#alert3").style.display="none"
-Semail.style.display="none";
-Saddress.style.display="block"
+document.querySelector("#Semail").style.display="none";
+document.querySelector("#Saddress").style.display="block"
 }
 
 
@@ -88,7 +88,7 @@ var Sotp = document.querySelector("#Sotp");
 
 signupData.forEach(function(element) {
   if(otp=="1234" && mobile==element.number){
-  // alert("Singin successfull")
+  alert("Singin successfull")
   Sotp.style.display="none";
    Semail.style.display="none"
 }
