@@ -1,5 +1,21 @@
 
+var signupData=[]
+if(localStorage.getItem("signupData")===null){
+signupData=[]
+}else {
+signupData=JSON.parse(localStorage.getItem("signupData"))
+}
 
+
+var signupobj={
+  number:123456897,
+  email:"email@email.com",
+  fname:"first",
+  lname:"last"
+  
+  }
+  signupData.push(signupobj)
+  localStorage.setItem("signupData",JSON.stringify(signupData))
 
 
 
@@ -63,7 +79,7 @@ Saddress.style.display="block"
 
 function otpsignin(){
     // e.preventDefault();
-console.log(1)
+// console.log(1)
 
 var otp=document.querySelector("#otp").value
 var mobile=document.querySelector("#mobile").value
@@ -171,8 +187,7 @@ localStorage.setItem("signupData",JSON.stringify(signupData))
 }
 
 
-
-console.log(signin)
+// console.log(signin)
 
 function demosign(){
     event.preventDefault()
@@ -202,7 +217,7 @@ document.querySelector("#popup").innerHTML=`<div id="signUp">
   id="com">Enjoy the convenience of a single account across all participating brands</p>
   <label>Verify with OTP</label>
   
-  <p>sent to +91<a>change?</a></p>
+  <p id="changeNum">sent to +91<a>change?</a></p>
   <input type="tel" id="otp" placeholder=""/>
   <div id="alert1">plese enter the OTP</div> 
   <div id="alert2">plese enter currect OTP</div>
@@ -258,6 +273,8 @@ document.querySelector("#popup").innerHTML=`<div id="signUp">
 </div>
 
 </div>
+
+
 
 `
 }
