@@ -340,6 +340,17 @@ body{
 
 }
   @media screen and (max-width: 600px) {
+    /* #image>div{
+        margin-left: 1vh;
+        border: 1px solid red;
+    } */
+    #cartContainer{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 2vw;
+     width: 97vw;
+     margin: auto;
+    }
     #image{
         margin-left: 0px;
         
