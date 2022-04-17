@@ -148,6 +148,12 @@ display: none;
 padding: 0%;
 margin: 0%;
     }
+    #lastTotal{
+        display: none;
+    }
+    #atag{
+        display: none;
+    }
     hr{
         margin-right: 5%;
     }
@@ -410,8 +416,7 @@ margin: 0%;
         
         display: grid;
         grid-template-columns: 100%;
-
-         ;
+        margin-bottom: 20vh;
     }
 
     #address{
@@ -722,16 +727,39 @@ margin: 0%;
         width: 100%;
     }
     #lastcom{
-        margin: 2% 0%;
-        width: 100%;
+        background-color: white;
+        margin: 0% 0%;
+        
+        width: 94.1%;
         display: flex;
-        position: relative;
-        right: 50px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 0px;
+        border-top: 2px solid gainsboro;
+    
+        z-index: 20;
      
+    }
+    #lastTotal{
+        display: flex;
+        
+        margin-bottom: -16px;
     }
     
     #lastcom a{
-        text-decoration: underline;
+        text-decoration: none;
+        font-size: 2.2vh;
+        color: gray;
+        line-height: 0px;
+      
+    }
+    #lastcom h3{
+        color: orange;
+        font-weight: 300;
+    }
+    #lastcom h2{
+        font-weight: bold;
     }
     #lastcom p{
         display: none;
@@ -740,21 +768,25 @@ margin: 0%;
     
     }
     #lastcom button{
-        width: 450%;
-        padding: 25% 5%;
+        width: 350%;
+        padding: 27% 5%;
         color: white;
         font-weight: 600;
         border:1px solid orange;
         background-color: orange;
         border-radius: 3px;
+    
         
     }
     #lastcom >div:nth-child(1){
-        margin-left: 50%;
+        margin-left: 2%;
         height: 10%;
         margin-top: 2%;
     }
-
+    #lastcom >div:nth-last-child(1){
+  
+        margin-right: 25vh;
+    }
 }
 #psummary{
 

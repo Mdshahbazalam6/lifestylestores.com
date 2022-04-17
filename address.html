@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="address.css"/>
 <body>
     <div id="nav">
-        <div><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg" /></div>
+        <div><a href="./header.html"><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg" /></a></div>
         <div>
             <p>Call 1800-123-1555</p>
             <p>Monday - Saturday, 09:00AM - 07:00PM</p>
@@ -328,6 +328,10 @@
             <div id="lastcom">
                 <div>
                     <p>By clicking on Proceed to Payment, you agree to our <a>Terms and Conditions</a></p>
+                  <a id="atag">Total</a>
+                 <div id="lastTotal"><h2 id="h4again"> </h2>
+                    <h3> Details</h3> </div> 
+                  <a id="atag">inclusive of all taxes</a>
                 </div>
                 <div><button id="button" onclick="submits()">Pay Now</button></div>
             </div>
@@ -423,6 +427,7 @@ var cartProducts=JSON.parse(localStorage.getItem("cartProducts"))
 // },0)
 var totalsum=localStorage.getItem("subtotal")
 document.querySelector("#h3").innerText="₹"+ " "+totalsum;
+document.querySelector("#h4again").innerText="₹"+ " "+Math.floor(totalsum*0.7) +" ";
 document.querySelector("#h4").innerText="₹"+ " "+Math.floor(totalsum*0.7);
  
 cartProducts.forEach(function(element,Index) {
