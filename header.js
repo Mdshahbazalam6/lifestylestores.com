@@ -282,6 +282,16 @@ deal_corner.forEach((ele)=>{
 
     let btn=document.createElement("button")
     btn.innerText=`Add To Cart`
+    btn.onclick=()=>{
+        var n=localStorage.getItem("cartProducts")
+        if(n === null){
+            localStorage.setItem("cartProducts",'[]')
+        }
+        var k=JSON.parse(localStorage.getItem("cartProducts"))
+        k.push(ele)
+        localStorage.setItem("cartProducts",JSON.stringify(k))
+        alert(`Product has been added`)
+    }
     div.append(image,p,child_div,btn)
     deal_corner_footer.append(div)
 })
