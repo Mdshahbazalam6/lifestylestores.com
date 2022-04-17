@@ -21,6 +21,10 @@
         box-sizing: border-box;
     }
 
+    #btitle{
+        padding:0vh 13vh; font-family:arial; font-weight:100; margin-top:4vh;
+    }
+
 #basket p{
     margin-bottom: 4vh;
 }
@@ -202,7 +206,8 @@ font-size: 2.2vh;
             margin: 5px;
         }
 
-        @media screen and (max-width:700px){
+
+@media screen and (max-width:700px){
             #basket{
         display: flex;
         flex-direction:column-reverse;
@@ -213,6 +218,103 @@ font-size: 2.2vh;
         font-family: arial;
        
         margin-bottom: 10vh;
+    }
+    #bmain{
+        width: 100%;
+      
+    }
+    #bmain3{
+        width:100%
+    }
+    #btitle{
+        padding:0vh 13vh; font-family:arial; font-weight:100; margin-top:4vh;
+        font-size: 3vh;
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+    #mediaimage  {
+        width: 10vw;
+
+    }
+    .listContainer{
+        width: 30vw;
+        border: 1px solid #cecece;
+        background-color: whitesmoke;
+        border-radius: 1vw;
+        margin-left: 1vw;
+        position: absolute;
+        top: 5vh;
+        left: 0vw;
+        display: none;
+        z-index: 100;
+    }
+    .listContainer > div{
+        margin: 1vh;
+    }
+    .listContainer>img{
+        width: 15vw;
+    }
+    .listContainer ul{
+        list-style: none;
+        margin: 1vh;
+    }
+    .listOflistContainer{
+        display: none;
+    }
+    .listOflistContainer{
+        margin: 2vh;
+    }
+    .listContainer >ul li:hover .listOflistContainer{
+        display: block;
+    }
+    .listOflistContainer > p:hover {
+        color: orangered;
+        background-color: green;
+        color: white;
+    }
+    .flexOfNavbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flexOfNavbar >div+div:hover {
+       background-color: red;
+       width: 2.5vw;
+       height: 4vh;
+       text-align: center;
+       align-items: center;
+       border-radius: .2vw;
+    }
+    .menubtn:hover .listContainer{
+       color: red;
+    }
+    .listContainer > a{
+        text-decoration: none;
+        color: black;
+    }
+    .first{
+      display: none;
+
+    }
+    /* .first>div ul {
+        width: 40vw;
+    } */
+    #navbarid{
+        display: none;
+    }
+    #responsivenav{
+        display: flex;
+        justify-content: space-between;
+        background-color: wheat;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        background-color: rgb(255,254,254);
+
+
+    }
+    #responsivenav :nth-child(2){
+        margin-right: 45vw;
+    }
+    #listContainer{
+        top: 3.5vh;
     }
   
         }
@@ -460,7 +562,7 @@ font-size: 2.2vh;
 
 
 
-    <h2 style="padding:0vh 13vh; font-family:arial; font-weight:100; margin-top:4vh; ;">Your Shopping Basket  </h2>
+    <h2 id="btitle" >Your Shopping Basket  </h2>
 
     <div id="basket">
         
