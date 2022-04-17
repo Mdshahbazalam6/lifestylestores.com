@@ -1,3 +1,10 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
 .first,
 .second ul {
     background-color: black;
@@ -243,4 +250,10 @@ wi
 
     }
    
+}
+#responsivenav{
+    display: none;
+}
+#listContainer{
+    display: none;
 }

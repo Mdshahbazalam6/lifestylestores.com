@@ -36,10 +36,13 @@ body{
 #image{
    
     overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     height: fit-content;
     /* width: fit-content; */
+    gap: 1vw;
     
 }
 #image>div>img{
@@ -47,8 +50,8 @@ body{
     
 }
 #image>div{
-    padding: 5px;
-    width: 332px;
+    padding: 10px;
+    width: 23vw;
     
     overflow: hidden;
     /* justify-content: center; */
