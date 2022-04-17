@@ -191,6 +191,7 @@ localStorage.setItem("signupData",JSON.stringify(signupData))
 
 function demosign(){
     event.preventDefault()
+    console.log(1)
 document.querySelector("#popup").style.display="block";
 // document.querySelector("#signUp").style.display="block"
 document.querySelector("#popup").innerHTML=`<div id="signUp">
