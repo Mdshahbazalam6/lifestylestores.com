@@ -142,3 +142,119 @@ margin-top: 10vh;
 color: #e6e1e1;
 height: .2vh;
 }
+
+
+@media all and (min-width:60px) and (max-width:650px){
+
+    .footer_first {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin: 5vh 3vw 2vh 3vw;
+        height: 40vh;
+        /* border: 1px solid red; */
+    }
+
+    .footer_first_left {
+        width: 90vw;
+        /* height: 30vh; */
+    }
+
+    .footer_first_left h1 {
+        font-size: 5vw;
+    }
+
+    .footer_first_left h6 {
+        font-size: 3vw;
+    }
+
+    .footer_first_left input {
+        width: 60vw;
+        margin-top: 4vh;
+        padding: 3vh;
+        margin-bottom: 0vh;
+        background-color: white;
+        border: 1px solid #cecece;
+    }
+
+    .footer_first_left button {
+        padding: 2vh;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        font-size: 2vw;
+    }
+
+    .footer_first_left>div {
+        width: 20vw;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        /* border: 1px solid black; */
+    }
+
+    .footer_first_left>div img {
+        width: 30vw;
+        margin-left: -43vw;
+    }
+
+    #footer_first_left_img {
+        width: 20vw;
+        margin-left: -38vw;
+    }
+
+    .footer_category {
+        grid-template-columns: 1fr 1fr;
+    }
+ 
+    .footer_category p{
+        font-size: 2vw;
+    }
+    .footer_category>div>ul {
+        font-size: 2vw;
+    }
+
+    .footer_category>div>ul>li {
+        font-size: 3vw;
+    }
+
+    .footer_category>div>ul>li b {
+        font-size: 3vw;
+    }
+
+    .call {
+        width: 90vw;
+        grid-template-columns: 1fr;
+        margin-left: 10vw;
+
+    }
+
+    .call_flex {
+        width: 40vw;
+        font-size: 3vw;
+    }
+
+    .material-icons {
+        font-size: 3vw;
+    }
+
+    .call_flex>div>div {
+        font-size: 3vw;
+    }
+
+    .footerfinal {
+        width: 90vw;
+        align-items: baseline;
+        justify-content: center;
+        font-size: 3vw;
+    }
+
+    .footerfinal p {
+        font-size: 4vw;
+    }
+
+    .footerfinal img {
+        width: 20vw;
+
+    }
+}
+
