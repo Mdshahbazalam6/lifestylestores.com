@@ -352,5 +352,14 @@
  
  
  
- 
+@media all and (min-width:60px) and (max-width:550px){
+#signUp, #Sotp,  #Semail, #Saddress {
+  margin: auto;
+  width: 100vw;
+  left: 0vw;
+}
+#Saddress h1{
+  font-size: 5vw;
+}
+} 
  

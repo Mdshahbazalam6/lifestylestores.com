@@ -20,7 +20,7 @@ const slide = () => {
                 a = 1
                 // console.log(i)
     
-                setTimeout('slide()', 6000);
+                setTimeout('slide()', 3000);
             } else if (a === 1) {
                 image1.style.transform = "translateX(-80vw)"
                 image2.style.transform = "translateX(-80vw)"
@@ -30,7 +30,7 @@ const slide = () => {
                 a = 2
     
                 // console.log(i)
-                setTimeout('slide()', 6000);
+                setTimeout('slide()', 3000);
             } else if (a === 2) {
                 image1.style.transform = "translateX(-160vw)"
                 image2.style.transform = "translateX(-160vw)"
@@ -40,7 +40,7 @@ const slide = () => {
                 a = 3
     
                 // console.log(i)
-                setTimeout('slide()', 6000);
+                setTimeout('slide()', 3000);
             } else if (a === 3) {
                 image1.style.transform = "translateX(-240vw)"
                 image2.style.transform = "translateX(-240vw)"
@@ -50,7 +50,7 @@ const slide = () => {
                 a = 4
                 // console.log(i)
     
-                setTimeout('slide()', 6000);
+                setTimeout('slide()', 3000);
             } else if (a === 4) {
                 image1.style.transform = "translateX(-320vw)"
                 image2.style.transform = "translateX(-320vw)"
@@ -60,7 +60,7 @@ const slide = () => {
                 a = 0
                 // console.log(i)
     
-                setTimeout('slide()', 6000);
+                setTimeout('slide()', 3000);
             }
         }
     
@@ -319,5 +319,6 @@ const submit_email=()=>{
     document.getElementById("email").value=``
 }
 
-// var a=JSON.parse(localStorage.getItem("cartProducts"))
-// document.getElementById("cart").innerText=a.length
+var d=JSON.parse(localStorage.getItem("cartProducts"))
+document.getElementById("cart").innerText=d.length
+
