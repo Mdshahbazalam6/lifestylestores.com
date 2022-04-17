@@ -343,7 +343,7 @@ font-size: 2.2vh;
         </div>
     </div>
     
-<div class="navbar">
+<div class="navbar" id="navbarid">
     <div><a href="./header.html"><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="lifestyle"></a></div>
     <div>
         <ul>
@@ -982,4 +982,24 @@ function address(){
 <script>
     var a=JSON.parse(localStorage.getItem("cartProducts"))
 document.getElementById("cart").innerText=a.length;
+</script>
+
+
+
+
+
+
+
+
+
+
+<script>
+    const none=()=>{
+    document.getElementById("listContainer").style.display="none"
+    console.log(1)
+    }
+    
+    const shownavbar=()=>{
+        document.getElementById("listContainer").style.display="block"
+    }
 </script>

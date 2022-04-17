@@ -155,13 +155,7 @@ wi
 }
 
 
-    
-    /* .first>div ul {
-        width: 40vw;
-    } */
-    #navbarid{
-        display: none;
-    }
+  
     #responsivenav{
         display: flex;
         justify-content: space-between;
@@ -248,25 +242,5 @@ wi
       display: none;
 
     }
-    /* .first>div ul {
-        width: 40vw;
-    } */
-    #navbarid{
-        display: none;
-    }
-    #responsivenav{
-        display: flex;
-        justify-content: space-between;
-        background-color: wheat;
-        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-        background-color: rgb(255,254,254);
-
-
-    }
-    #responsivenav :nth-child(2){
-        margin-right: 45vw;
-    }
-    #listContainer{
-        top: 3.5vh;
-    }
+   
 }

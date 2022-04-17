@@ -809,6 +809,7 @@ hr {
     #navbarid{
         display: none;
     }
+
     #responsivenav{
         display: flex;
         justify-content: space-between;
