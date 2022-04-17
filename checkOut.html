@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,89 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<link rel="stylesheet" href="./navbar.css"/>
-<link rel="stylesheet" href="./header.css"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!-- <link rel="stylesheet" href="./signup.css"> -->
+<link rel="stylesheet" href="navbar.css">
 <link rel="stylesheet" href="./checkout.css">
 <link rel="stylesheet" href="./footer.css">
 <body>
-
-
-
-
-
-    <div id="responsivenav">
-        <div onclick="shownavbar()" class="menubtn"><i class="material-icons" style="font-size: 3vw;border: none;padding: 0%; width: 1vw;"  >menu</i></div>
-        <div><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="lifestyle" id="mediaimage"></div>
-    </div>
-  
-    <!-- <div onclick="shownavbar()" class="menubtn"><i class="material-icons" style="font-size: 3vw;border: none;padding: 0%; width: 1vw;"  >menu</i></div> -->
-    <div class="listContainer" id="listContainer">
-      <div class="flexOfNavbar">
-        <div><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="lifestyle" id="mediaimage"></div>
-        <div id="cutmenu" onclick="none()">X</div>
-      </div>
-        <ul >
-            <li>Women
-  
-            </li>
-            <li>Men  ›
-                <div class="listOflistContainer">
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >TopWear </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Bottomwear </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Activewear </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Ethnic </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Winterwear </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Innerwear </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >WFH Edits </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Watches </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Sunglasses </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Shoes </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Grooming </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Add-Ones </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >More </a></p>
-            </div>
-            </li>
-            <li>Kids ›
-                <div class="listOflistContainer">
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Boys </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Girls </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Infants </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Top Brands </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Winterwear </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Accessories </a></p>
-                    <p  ><a href="productPage.html" style="text-decoration: none;color: black;" >Price point Store </a>  </p>
-            </div>
-            </li>
-            <li>Shoes & Bags </li>
-            <li>Beauty  </li>
-  
-        </ul>
-        <div><input type="text" placeholder="🔍 What are you looking for?"></div>
-        <div><p>
-            <!-- SignUp-signIn -->
-            <div id="signUpp">
-                <button  onclick="demosign()" style="border: none;">SignUp / Sign In</button>
-            </div>
-            
-            
-            
-            <div  id="popup">
-            
-            </div>
-            
-            
-            <div id="demomain"></div>
-        </p></div>
-        <div><p>Basket</p></div>
-    </div>
-  
-  
-  
-  
-  
-  
 
     <div class="first">
         <div>
@@ -108,7 +32,7 @@
         </div>
     </div>
     
-<div class="navbar" id="navbarid">
+<div class="navbar">
     <div><a href="./header.html"><img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg " alt="lifestyle"></a></div>
     <div>
         <ul>
@@ -619,15 +543,4 @@
     var a=JSON.parse(localStorage.getItem("cartProducts"))
   document.getElementById("cart").innerText=a.length
    </script>
-
-<script>
-    const none=()=>{
-    document.getElementById("listContainer").style.display="none"
-    console.log(1)
-    }
-    
-    const shownavbar=()=>{
-        document.getElementById("listContainer").style.display="block"
-    }
-</script>
 </html>

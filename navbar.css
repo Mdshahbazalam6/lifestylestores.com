@@ -3,7 +3,14 @@
     padding: 0%;
     box-sizing: border-box;
 }
+#menuebtnid{
+   
+    display: none !important;
 
+}
+#listContainer{
+    display: none !important;
+}
 
 .first,
 .second ul {
@@ -186,9 +193,74 @@ wi
     }
 
 @media all and (min-width:60px) and (max-width:700px){
+     #menuebtnid{
+        display:  block !important;
+    }
     #mediaimage  {
         width: 10vw;
 
+    }
+    /* #listContainer {
+        di
+    } */
+    .listContainer{
+        width: 30vw;
+        border: 1px solid #cecece;
+        background-color: whitesmoke;
+        border-radius: 1vw;
+        margin-left: 1vw;
+        position: absolute;
+        top: 5vh;
+        left: 0vw;
+        display: none;
+        z-index: 100;
+    }
+    .listContainer > div{
+        margin: 1vh;
+    }
+    .listContainer>img{
+        width: 15vw;
+    }
+    .listContainer ul{
+        list-style: none;
+        margin: 1vh;
+    }
+    .listOflistContainer{
+        display: none;
+    }
+   /* .listOflistContainer{
+        margin: 2vh;
+    }
+    .listContainer >ul li:hover .listOflistContainer{
+        display: block;
+    }
+    .listOflistContainer > p:hover {
+        color: orangered;
+        background-color: green;
+        color: white;
+    }
+    .flexOfNavbar >div+div:hover {
+       background-color: red;
+       width: 2.5vw;
+       height: 4vh;
+       text-align: center;
+       align-items: center;
+       border-radius: .2vw;
+    }
+    .menubtn:hover .listContainer{
+       color: red;
+    }
+    .listContainer > a{
+        text-decoration: none;
+        color: black;
+    }
+    .first{
+      display: none;
+
+    } */
+    .flexOfNavbar {
+        display: flex;
+        justify-content: space-between;
     }
     .listContainer{
         width: 30vw;
@@ -249,7 +321,28 @@ wi
       display: none;
 
     }
-   
+    /* .first>div ul {
+        width: 40vw;
+    } */
+    #navbarid{
+        display: none;
+    }
+
+    #responsivenav{
+        display: flex;
+        justify-content: space-between;
+        background-color: wheat;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        background-color: rgb(255,254,254);
+
+
+    }
+    #responsivenav :nth-child(2){
+        margin-right: 45vw;
+    }
+    #listContainer{
+        top: 3.5vh;
+    }
 }
 #responsivenav{
     display: none;
@@ -257,3 +350,4 @@ wi
 #listContainer{
     display: none;
 }
+
