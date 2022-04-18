@@ -14,7 +14,10 @@ var signupobj={
   lname:"last"
   
   }
-  signupData.push(signupobj)
+  if(signupData.length === 0){
+
+    signupData.push(signupobj)
+  }
   localStorage.setItem("signupData",JSON.stringify(signupData))
 
 
