@@ -444,7 +444,7 @@ hr {
 
 .deal_corner {
     width: 90vw;
-    height: 40vh;
+    height: 50vh;
     /* border: 1px solid #cecece; */
     margin-left: 4vw;
     margin-top: 4vh;
@@ -453,20 +453,27 @@ hr {
     /* position: absolute; */
 }
 
-#deal_corner_footer_top {
+.deal_corner_footer_top {
     width: 90vw;
-    height: 40vh;
+    height: 50vh;
     margin: auto;
     /* overflow: hidden; */
     transition: 2sec;
+    /* border: 1px solid red; */
+ 
 }
+#dealcornerhr{
+    margin-bottom: 2vh;
 
+}
 #deal_corner_footer {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     /* overflow: hidden; */
     gap: 1.6vw;
     transition: 2sec;
+  height: 100%;
+  margin-bottom: 5vh;
 }
 
 #deal_corner_footer img {
